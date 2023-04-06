@@ -16,7 +16,7 @@ BD=$PWD/builds
 initRepos() {
     if [ ! -f .repo/manifest.xml ]; then
         echo "--> Initializing workspace"
-        repo init -u https://github.com/PixelExperience/manifest -b thirteen_plus
+        repo init -u https://github.com/PixelExperience/manifest -b thirteen-plus
         echo
 
         echo "--> Preparing local manifest"
@@ -94,9 +94,9 @@ generatePackages() {
 START=`date +%s`
 BUILD_DATE="$(date +%Y%m%d)"
 
-# initRepos
-# syncRepos
-# applyPatches
+initRepos
+syncRepos
+applyPatches
 setupEnv
 # buildTrebleApp
 buildVariant
