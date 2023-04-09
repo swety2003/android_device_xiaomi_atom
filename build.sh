@@ -45,30 +45,31 @@ setupEnv() {
     echo
 }
 
-buildTrebleApp() {
-    echo "--> Building treble_app"
-    cd treble_app
-    bash build.sh release
-    cp TrebleApp.apk ../vendor/hardware_overlay/TrebleApp/app.apk
-    cd ..
-    echo
-}
+# buildTrebleApp() {
+#     echo "--> Building treble_app"
+#     cd treble_app
+#     bash build.sh release
+#     cp TrebleApp.apk ../vendor/hardware_overlay/TrebleApp/app.apk
+#     cd ..
+#     echo
+# }
 
-buildVariant() {
+buildUserDebug() {
     echo "--> Building aosp_atom-userdebug"
     lunch aosp_atom-userdebug
-    make -j$(nproc --all) installclean
-    make -j$(nproc --all) systemimage
-    mv $OUT/system.img $BD/aosp_atom-userdebug.img
+    mka systemimage
+    mka productimage
+    # mv $OUT/system.img $BD/aosp_atom-userdebug.img
     echo
 }
 
-buildSlimVariant() {
-    echo "--> Building treble_arm64_bvN-slim"
-    (cd vendor/gms && git am $BL/patches/slim.patch)
-    make -j$(nproc --all) systemimage
-    (cd vendor/gms && git reset --hard HEAD~1)
-    mv $OUT/system.img $BD/system-treble_arm64_bvN-slim.img
+buildUser() {
+    echo "--> Building aosp_atom-user"
+    lunch aosp_atom-user
+    mka systemimage
+    mka productimage
+    mka vendorimage
+    # mv $OUT/system.img $BD/aosp_atom-user.img
     echo
 }
 
@@ -94,12 +95,33 @@ generatePackages() {
 START=`date +%s`
 BUILD_DATE="$(date +%Y%m%d)"
 
-initRepos
-syncRepos
-applyPatches
+
+# prepare
+# mv BoardConfig.mk ./debice/xiaomi/atom
+# mv -r sepolicy/ device/xiaomi/atom/
+# git clone https://github.com/PixelExperience/device_mediatek_sepolicy_vndr
+# mkdir device/mediatek
+# mkdir device/mediatek/sepolicy_vndr
+# mv -r device_mediatek_sepolicy_vndr/* device/mediatek/sepolicy_vndr/
+
+# mkdir kernel/xiaomi/    
+# mkdir kernel/xiaomi/atom
+# git clone --depth=1 https://github.com/xiaomi-mt6885-devs/android_kernel_xiaomi_mt6885
+# mv -r Xiaomi_Kernel_OpenSource/* kernel/xiaomi/atom/
+
+# mv -r sepolicy/ device/xiaomi/atom
+# mv -r fingerprint/ device/xiaomi/atom
+# cp -r configs/ device/xiaomi/atom
+# cp framework_manifest.xml device/xiaomi/atom/
+# cp compatibility_matrix.xml device/xiaomi/atom/
+
+# initRepos
+# syncRepos
+# applyPatches
+
+
 setupEnv
-# buildTrebleApp
-buildVariant
+buildUser
 # buildSlimVariant
 # buildVndkliteVariant
 # generatePackages
