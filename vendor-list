@@ -1,0 +1,2217 @@
+vendor
+├── aosp
+│   ├── audio
+│   │   ├── alarms
+│   │   ├── notifications
+│   │   ├── ringtones
+│   │   └── ui
+│   ├── bash_completion
+│   ├── bootanimation
+│   ├── build
+│   │   ├── core
+│   │   │   └── vendor
+│   │   ├── soong
+│   │   │   └── generator
+│   │   ├── target
+│   │   │   └── product
+│   │   ├── tasks
+│   │   └── tools
+│   ├── charger
+│   │   ├── images
+│   │   │   └── charger
+│   │   └── values
+│   │       └── charger
+│   ├── config
+│   │   └── permissions
+│   ├── fonts
+│   ├── misc
+│   │   └── libbfqio
+│   │       └── include
+│   │           └── bfqio
+│   ├── overlay
+│   │   ├── common
+│   │   │   ├── frameworks
+│   │   │   │   └── base
+│   │   │   │       ├── core
+│   │   │   │       │   └── res
+│   │   │   │       │       └── res
+│   │   │   │       │           ├── color
+│   │   │   │       │           ├── drawable-nodpi
+│   │   │   │       │           ├── values
+│   │   │   │       │           └── values-mcc460
+│   │   │   │       └── packages
+│   │   │   │           ├── SettingsLib
+│   │   │   │           │   └── SettingsTheme
+│   │   │   │           │       └── res
+│   │   │   │           │           └── values-v31
+│   │   │   │           └── SystemUI
+│   │   │   │               └── res
+│   │   │   │                   ├── values
+│   │   │   │                   └── values-night
+│   │   │   ├── packages
+│   │   │   │   └── apps
+│   │   │   │       ├── FMRadio
+│   │   │   │       │   └── res
+│   │   │   │       │       ├── drawable-hdpi
+│   │   │   │       │       ├── drawable-ldpi
+│   │   │   │       │       ├── drawable-mdpi
+│   │   │   │       │       ├── drawable-xhdpi
+│   │   │   │       │       ├── drawable-xxhdpi
+│   │   │   │       │       └── drawable-xxxhdpi
+│   │   │   │       ├── Settings
+│   │   │   │       │   └── res
+│   │   │   │       │       └── values
+│   │   │   │       └── SimpleDeviceConfig
+│   │   │   │           └── res
+│   │   │   │               └── values
+│   │   │   └── vendor
+│   │   │       └── qcom
+│   │   │           └── opensource
+│   │   │               └── fm-commonsys
+│   │   │                   └── fmapp2
+│   │   │                       └── res
+│   │   │                           ├── drawable
+│   │   │                           ├── drawable-hdpi
+│   │   │                           ├── drawable-ldpi
+│   │   │                           ├── drawable-mdpi
+│   │   │                           ├── drawable-xhdpi
+│   │   │                           ├── drawable-xxhdpi
+│   │   │                           └── drawable-xxxhdpi
+│   │   └── rro_packages
+│   │       └── NetworkStackOverlay
+│   │           └── res
+│   │               └── values
+│   ├── prebuilt
+│   │   └── common
+│   │       └── etc
+│   │           └── init
+│   ├── rro_overlays
+│   │   ├── BuiltInPrintServiceOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── CaptivePortalLoginOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── CellBroadcastServiceOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── ContactsProviderOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── DummyCutoutOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── FlipendoOverlay
+│   │   │   └── res
+│   │   │       ├── drawable-mcc310-mnc160
+│   │   │       ├── drawable-mcc310-mnc200
+│   │   │       ├── drawable-mcc310-mnc210
+│   │   │       ├── drawable-mcc310-mnc220
+│   │   │       ├── drawable-mcc310-mnc230
+│   │   │       ├── drawable-mcc310-mnc240
+│   │   │       ├── drawable-mcc310-mnc250
+│   │   │       ├── drawable-mcc310-mnc26
+│   │   │       ├── drawable-mcc310-mnc260
+│   │   │       ├── drawable-mcc310-mnc270
+│   │   │       ├── drawable-mcc310-mnc300
+│   │   │       ├── drawable-mcc310-mnc310
+│   │   │       ├── drawable-mcc310-mnc490
+│   │   │       ├── drawable-mcc310-mnc530
+│   │   │       ├── drawable-mcc310-mnc590
+│   │   │       ├── drawable-mcc310-mnc640
+│   │   │       ├── drawable-mcc310-mnc660
+│   │   │       ├── drawable-mcc310-mnc800
+│   │   │       ├── values
+│   │   │       ├── values-mcc310-mnc10
+│   │   │       ├── values-mcc310-mnc120
+│   │   │       ├── values-mcc310-mnc160
+│   │   │       ├── values-mcc310-mnc200
+│   │   │       ├── values-mcc310-mnc210
+│   │   │       ├── values-mcc310-mnc220
+│   │   │       ├── values-mcc310-mnc230
+│   │   │       ├── values-mcc310-mnc240
+│   │   │       ├── values-mcc310-mnc250
+│   │   │       ├── values-mcc310-mnc26
+│   │   │       ├── values-mcc310-mnc260
+│   │   │       ├── values-mcc310-mnc270
+│   │   │       ├── values-mcc310-mnc300
+│   │   │       ├── values-mcc310-mnc310
+│   │   │       ├── values-mcc310-mnc490
+│   │   │       ├── values-mcc310-mnc530
+│   │   │       ├── values-mcc310-mnc590
+│   │   │       ├── values-mcc310-mnc640
+│   │   │       ├── values-mcc310-mnc660
+│   │   │       ├── values-mcc310-mnc800
+│   │   │       ├── values-mcc311-mnc490
+│   │   │       ├── values-mcc311-mnc870
+│   │   │       └── values-mcc312-mnc530
+│   │   ├── GoogleConfigOverlay
+│   │   │   └── res
+│   │   │       ├── drawable
+│   │   │       ├── raw
+│   │   │       ├── values
+│   │   │       ├── values-af
+│   │   │       ├── values-am
+│   │   │       ├── values-ar
+│   │   │       ├── values-ar-rXB
+│   │   │       ├── values-as
+│   │   │       ├── values-az
+│   │   │       ├── values-be
+│   │   │       ├── values-bg
+│   │   │       ├── values-bn
+│   │   │       ├── values-bs
+│   │   │       ├── values-b+sr+Latn
+│   │   │       ├── values-ca
+│   │   │       ├── values-cs
+│   │   │       ├── values-da
+│   │   │       ├── values-de
+│   │   │       ├── values-el
+│   │   │       ├── values-en-rAU
+│   │   │       ├── values-en-rCA
+│   │   │       ├── values-en-rGB
+│   │   │       ├── values-en-rIN
+│   │   │       ├── values-en-rXA
+│   │   │       ├── values-en-rXC
+│   │   │       ├── values-es
+│   │   │       ├── values-es-rUS
+│   │   │       ├── values-et
+│   │   │       ├── values-eu
+│   │   │       ├── values-fa
+│   │   │       ├── values-fi
+│   │   │       ├── values-fr
+│   │   │       ├── values-fr-rCA
+│   │   │       ├── values-gl
+│   │   │       ├── values-gu
+│   │   │       ├── values-hi
+│   │   │       ├── values-hr
+│   │   │       ├── values-hu
+│   │   │       ├── values-hy
+│   │   │       ├── values-in
+│   │   │       ├── values-is
+│   │   │       ├── values-it
+│   │   │       ├── values-iw
+│   │   │       ├── values-ja
+│   │   │       ├── values-ka
+│   │   │       ├── values-kk
+│   │   │       ├── values-km
+│   │   │       ├── values-kn
+│   │   │       ├── values-ko
+│   │   │       ├── values-ky
+│   │   │       ├── values-lo
+│   │   │       ├── values-lt
+│   │   │       ├── values-lv
+│   │   │       ├── values-mk
+│   │   │       ├── values-ml
+│   │   │       ├── values-mn
+│   │   │       ├── values-mr
+│   │   │       ├── values-ms
+│   │   │       ├── values-my
+│   │   │       ├── values-nb
+│   │   │       ├── values-ne
+│   │   │       ├── values-nl
+│   │   │       ├── values-or
+│   │   │       ├── values-pa
+│   │   │       ├── values-pl
+│   │   │       ├── values-pt
+│   │   │       ├── values-pt-rBR
+│   │   │       ├── values-pt-rPT
+│   │   │       ├── values-ro
+│   │   │       ├── values-ru
+│   │   │       ├── values-si
+│   │   │       ├── values-sk
+│   │   │       ├── values-sl
+│   │   │       ├── values-sq
+│   │   │       ├── values-sr
+│   │   │       ├── values-sv
+│   │   │       ├── values-sw
+│   │   │       ├── values-ta
+│   │   │       ├── values-te
+│   │   │       ├── values-th
+│   │   │       ├── values-tl
+│   │   │       ├── values-tr
+│   │   │       ├── values-uk
+│   │   │       ├── values-ur
+│   │   │       ├── values-uz
+│   │   │       ├── values-vi
+│   │   │       ├── values-zh-rCN
+│   │   │       ├── values-zh-rHK
+│   │   │       ├── values-zh-rTW
+│   │   │       ├── values-zu
+│   │   │       └── xml
+│   │   ├── GooglePermissionControllerOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── GoogleWebViewOverlay
+│   │   │   └── res
+│   │   │       └── xml
+│   │   ├── NavigationBarNoHintOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── NexusLauncherResOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── NoCutoutOverlay
+│   │   │   └── res
+│   │   │       ├── values
+│   │   │       ├── values-af
+│   │   │       ├── values-am
+│   │   │       ├── values-ar
+│   │   │       ├── values-as
+│   │   │       ├── values-az
+│   │   │       ├── values-be
+│   │   │       ├── values-bg
+│   │   │       ├── values-bn
+│   │   │       ├── values-bs
+│   │   │       ├── values-b+sr+Latn
+│   │   │       ├── values-ca
+│   │   │       ├── values-cs
+│   │   │       ├── values-da
+│   │   │       ├── values-de
+│   │   │       ├── values-el
+│   │   │       ├── values-en-rAU
+│   │   │       ├── values-en-rCA
+│   │   │       ├── values-en-rGB
+│   │   │       ├── values-en-rIN
+│   │   │       ├── values-en-rXC
+│   │   │       ├── values-es
+│   │   │       ├── values-es-rUS
+│   │   │       ├── values-et
+│   │   │       ├── values-eu
+│   │   │       ├── values-fa
+│   │   │       ├── values-fi
+│   │   │       ├── values-fr
+│   │   │       ├── values-fr-rCA
+│   │   │       ├── values-gl
+│   │   │       ├── values-gu
+│   │   │       ├── values-hi
+│   │   │       ├── values-hr
+│   │   │       ├── values-hu
+│   │   │       ├── values-hy
+│   │   │       ├── values-in
+│   │   │       ├── values-is
+│   │   │       ├── values-it
+│   │   │       ├── values-iw
+│   │   │       ├── values-ja
+│   │   │       ├── values-ka
+│   │   │       ├── values-kk
+│   │   │       ├── values-km
+│   │   │       ├── values-kn
+│   │   │       ├── values-ko
+│   │   │       ├── values-ky
+│   │   │       ├── values-land
+│   │   │       ├── values-lo
+│   │   │       ├── values-lt
+│   │   │       ├── values-lv
+│   │   │       ├── values-mk
+│   │   │       ├── values-ml
+│   │   │       ├── values-mn
+│   │   │       ├── values-mr
+│   │   │       ├── values-ms
+│   │   │       ├── values-my
+│   │   │       ├── values-nb
+│   │   │       ├── values-ne
+│   │   │       ├── values-nl
+│   │   │       ├── values-or
+│   │   │       ├── values-pa
+│   │   │       ├── values-pl
+│   │   │       ├── values-pt
+│   │   │       ├── values-pt-rBR
+│   │   │       ├── values-pt-rPT
+│   │   │       ├── values-ro
+│   │   │       ├── values-ru
+│   │   │       ├── values-si
+│   │   │       ├── values-sk
+│   │   │       ├── values-sl
+│   │   │       ├── values-sq
+│   │   │       ├── values-sr
+│   │   │       ├── values-sv
+│   │   │       ├── values-sw
+│   │   │       ├── values-ta
+│   │   │       ├── values-te
+│   │   │       ├── values-th
+│   │   │       ├── values-tl
+│   │   │       ├── values-tr
+│   │   │       ├── values-uk
+│   │   │       ├── values-ur
+│   │   │       ├── values-uz
+│   │   │       ├── values-vi
+│   │   │       ├── values-zh-rCN
+│   │   │       ├── values-zh-rHK
+│   │   │       ├── values-zh-rTW
+│   │   │       └── values-zu
+│   │   ├── NowPlayingOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── PixelConfigOverlay2018
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── PixelConfigOverlay2019
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── PixelConfigOverlay2019Midyear
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── PixelConfigOverlay2021
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── PixelConfigOverlayCommon
+│   │   │   └── res
+│   │   │       ├── color
+│   │   │       ├── drawable
+│   │   │       ├── drawable-night
+│   │   │       ├── values
+│   │   │       ├── values-ar-rXB
+│   │   │       └── values-en-rXA
+│   │   ├── PixelDocumentsUIGoogleOverlay
+│   │   │   └── res
+│   │   │       ├── drawable
+│   │   │       ├── drawable-ldrtl
+│   │   │       ├── values
+│   │   │       └── values-night
+│   │   ├── PixelFwResOverlay
+│   │   │   └── res
+│   │   │       ├── values
+│   │   │       ├── values-mcc204-mnc4
+│   │   │       ├── values-mcc214-mnc1
+│   │   │       ├── values-mcc262-mnc1
+│   │   │       ├── values-mcc262-mnc1-ar-rXB
+│   │   │       ├── values-mcc262-mnc1-en-rXA
+│   │   │       ├── values-mcc262-mnc7
+│   │   │       ├── values-mcc262-mnc8
+│   │   │       ├── values-mcc268-mnc1
+│   │   │       ├── values-mcc310-mnc120
+│   │   │       ├── values-mcc310-mnc150
+│   │   │       ├── values-mcc310-mnc160
+│   │   │       ├── values-mcc310-mnc170
+│   │   │       ├── values-mcc310-mnc200
+│   │   │       ├── values-mcc310-mnc210
+│   │   │       ├── values-mcc310-mnc220
+│   │   │       ├── values-mcc310-mnc230
+│   │   │       ├── values-mcc310-mnc240
+│   │   │       ├── values-mcc310-mnc250
+│   │   │       ├── values-mcc310-mnc26
+│   │   │       ├── values-mcc310-mnc260
+│   │   │       ├── values-mcc310-mnc270
+│   │   │       ├── values-mcc310-mnc280
+│   │   │       ├── values-mcc310-mnc30
+│   │   │       ├── values-mcc310-mnc300
+│   │   │       ├── values-mcc310-mnc310
+│   │   │       ├── values-mcc310-mnc380
+│   │   │       ├── values-mcc310-mnc4
+│   │   │       ├── values-mcc310-mnc410
+│   │   │       ├── values-mcc310-mnc490
+│   │   │       ├── values-mcc310-mnc530
+│   │   │       ├── values-mcc310-mnc560
+│   │   │       ├── values-mcc310-mnc640
+│   │   │       ├── values-mcc310-mnc660
+│   │   │       ├── values-mcc310-mnc680
+│   │   │       ├── values-mcc310-mnc70
+│   │   │       ├── values-mcc310-mnc800
+│   │   │       ├── values-mcc310-mnc90
+│   │   │       ├── values-mcc311-mnc180
+│   │   │       ├── values-mcc311-mnc220
+│   │   │       ├── values-mcc311-mnc221
+│   │   │       ├── values-mcc311-mnc222
+│   │   │       ├── values-mcc311-mnc223
+│   │   │       ├── values-mcc311-mnc224
+│   │   │       ├── values-mcc311-mnc225
+│   │   │       ├── values-mcc311-mnc226
+│   │   │       ├── values-mcc311-mnc227
+│   │   │       ├── values-mcc311-mnc228
+│   │   │       ├── values-mcc311-mnc229
+│   │   │       ├── values-mcc311-mnc480
+│   │   │       ├── values-mcc311-mnc490
+│   │   │       ├── values-mcc311-mnc580
+│   │   │       ├── values-mcc311-mnc581
+│   │   │       ├── values-mcc311-mnc582
+│   │   │       ├── values-mcc311-mnc583
+│   │   │       ├── values-mcc311-mnc584
+│   │   │       ├── values-mcc311-mnc585
+│   │   │       ├── values-mcc311-mnc586
+│   │   │       ├── values-mcc311-mnc587
+│   │   │       ├── values-mcc311-mnc588
+│   │   │       ├── values-mcc311-mnc589
+│   │   │       ├── values-mcc311-mnc660
+│   │   │       ├── values-mcc311-mnc870
+│   │   │       ├── values-mcc311-mnc882
+│   │   │       ├── values-mcc312-mnc250
+│   │   │       ├── values-mcc312-mnc530
+│   │   │       ├── values-mcc312-mnc670
+│   │   │       ├── values-mcc313-mnc100
+│   │   │       ├── values-mcc313-mnc110
+│   │   │       ├── values-mcc313-mnc120
+│   │   │       ├── values-mcc313-mnc130
+│   │   │       ├── values-mcc313-mnc140
+│   │   │       ├── values-mcc316-mnc10
+│   │   │       ├── values-mcc330-mnc110
+│   │   │       ├── values-mcc334-mnc20
+│   │   │       ├── values-mcc334-mnc30
+│   │   │       ├── values-mcc334-mnc50
+│   │   │       ├── values-mcc334-mnc90
+│   │   │       ├── values-mcc370-mnc2
+│   │   │       ├── values-mcc404-mnc1
+│   │   │       ├── values-mcc405-mnc840
+│   │   │       ├── values-mcc405-mnc840-ar-rXB
+│   │   │       ├── values-mcc405-mnc840-en-rXA
+│   │   │       ├── values-mcc405-mnc855
+│   │   │       ├── values-mcc405-mnc855-ar-rXB
+│   │   │       ├── values-mcc405-mnc855-en-rXA
+│   │   │       ├── values-mcc405-mnc856
+│   │   │       ├── values-mcc405-mnc856-ar-rXB
+│   │   │       ├── values-mcc405-mnc856-en-rXA
+│   │   │       ├── values-mcc405-mnc857
+│   │   │       ├── values-mcc405-mnc857-ar-rXB
+│   │   │       ├── values-mcc405-mnc857-en-rXA
+│   │   │       ├── values-mcc405-mnc858
+│   │   │       ├── values-mcc405-mnc858-ar-rXB
+│   │   │       ├── values-mcc405-mnc858-en-rXA
+│   │   │       ├── values-mcc405-mnc859
+│   │   │       ├── values-mcc405-mnc859-ar-rXB
+│   │   │       ├── values-mcc405-mnc859-en-rXA
+│   │   │       ├── values-mcc405-mnc860
+│   │   │       ├── values-mcc405-mnc860-ar-rXB
+│   │   │       ├── values-mcc405-mnc860-en-rXA
+│   │   │       ├── values-mcc405-mnc861
+│   │   │       ├── values-mcc405-mnc861-ar-rXB
+│   │   │       ├── values-mcc405-mnc861-en-rXA
+│   │   │       ├── values-mcc405-mnc862
+│   │   │       ├── values-mcc405-mnc862-ar-rXB
+│   │   │       ├── values-mcc405-mnc862-en-rXA
+│   │   │       ├── values-mcc405-mnc863
+│   │   │       ├── values-mcc405-mnc863-ar-rXB
+│   │   │       ├── values-mcc405-mnc863-en-rXA
+│   │   │       ├── values-mcc405-mnc864
+│   │   │       ├── values-mcc405-mnc864-ar-rXB
+│   │   │       ├── values-mcc405-mnc864-en-rXA
+│   │   │       ├── values-mcc405-mnc865
+│   │   │       ├── values-mcc405-mnc865-ar-rXB
+│   │   │       ├── values-mcc405-mnc865-en-rXA
+│   │   │       ├── values-mcc405-mnc866
+│   │   │       ├── values-mcc405-mnc866-ar-rXB
+│   │   │       ├── values-mcc405-mnc866-en-rXA
+│   │   │       ├── values-mcc405-mnc867
+│   │   │       ├── values-mcc405-mnc867-ar-rXB
+│   │   │       ├── values-mcc405-mnc867-en-rXA
+│   │   │       ├── values-mcc405-mnc868
+│   │   │       ├── values-mcc405-mnc868-ar-rXB
+│   │   │       ├── values-mcc405-mnc868-en-rXA
+│   │   │       ├── values-mcc405-mnc869
+│   │   │       ├── values-mcc405-mnc869-ar-rXB
+│   │   │       ├── values-mcc405-mnc869-en-rXA
+│   │   │       ├── values-mcc405-mnc870
+│   │   │       ├── values-mcc405-mnc870-ar-rXB
+│   │   │       ├── values-mcc405-mnc870-en-rXA
+│   │   │       ├── values-mcc405-mnc871
+│   │   │       ├── values-mcc405-mnc871-ar-rXB
+│   │   │       ├── values-mcc405-mnc871-en-rXA
+│   │   │       ├── values-mcc405-mnc872
+│   │   │       ├── values-mcc405-mnc872-ar-rXB
+│   │   │       ├── values-mcc405-mnc872-en-rXA
+│   │   │       ├── values-mcc405-mnc873
+│   │   │       ├── values-mcc405-mnc873-ar-rXB
+│   │   │       ├── values-mcc405-mnc873-en-rXA
+│   │   │       ├── values-mcc405-mnc874
+│   │   │       ├── values-mcc405-mnc874-ar-rXB
+│   │   │       ├── values-mcc405-mnc874-en-rXA
+│   │   │       ├── values-mcc440-mnc50
+│   │   │       ├── values-mcc440-mnc51
+│   │   │       ├── values-mcc440-mnc52
+│   │   │       ├── values-mcc440-mnc53
+│   │   │       ├── values-mcc440-mnc54
+│   │   │       ├── values-mcc440-mnc55
+│   │   │       ├── values-mcc440-mnc56
+│   │   │       ├── values-mcc440-mnc7
+│   │   │       ├── values-mcc440-mnc70
+│   │   │       ├── values-mcc440-mnc71
+│   │   │       ├── values-mcc440-mnc72
+│   │   │       ├── values-mcc440-mnc73
+│   │   │       ├── values-mcc440-mnc74
+│   │   │       ├── values-mcc440-mnc75
+│   │   │       ├── values-mcc440-mnc76
+│   │   │       ├── values-mcc440-mnc77
+│   │   │       ├── values-mcc440-mnc78
+│   │   │       ├── values-mcc440-mnc79
+│   │   │       ├── values-mcc440-mnc8
+│   │   │       ├── values-mcc440-mnc88
+│   │   │       ├── values-mcc440-mnc89
+│   │   │       ├── values-mcc441-mnc70
+│   │   │       ├── values-mcc505-mnc1
+│   │   │       ├── values-mcc505-mnc11
+│   │   │       ├── values-mcc505-mnc2
+│   │   │       ├── values-mcc505-mnc3
+│   │   │       ├── values-mcc505-mnc7
+│   │   │       ├── values-mcc505-mnc71
+│   │   │       ├── values-mcc505-mnc72
+│   │   │       ├── values-mcc505-mnc90
+│   │   │       ├── values-mcc706-mnc1
+│   │   │       ├── values-mcc712-mnc3
+│   │   │       ├── values-mcc714-mnc3
+│   │   │       ├── values-mcc716-mnc10
+│   │   │       ├── values-mcc716-mnc17
+│   │   │       ├── values-mcc716-mnc6
+│   │   │       ├── values-mcc722-mnc2
+│   │   │       ├── values-mcc722-mnc310
+│   │   │       ├── values-mcc722-mnc34
+│   │   │       ├── values-mcc722-mnc340
+│   │   │       ├── values-mcc722-mnc341
+│   │   │       ├── values-mcc722-mnc36
+│   │   │       ├── values-mcc722-mnc7
+│   │   │       ├── values-mcc724-mnc10
+│   │   │       ├── values-mcc724-mnc11
+│   │   │       ├── values-mcc724-mnc16
+│   │   │       ├── values-mcc724-mnc2
+│   │   │       ├── values-mcc724-mnc23
+│   │   │       ├── values-mcc724-mnc24
+│   │   │       ├── values-mcc724-mnc3
+│   │   │       ├── values-mcc724-mnc31
+│   │   │       ├── values-mcc724-mnc39
+│   │   │       ├── values-mcc724-mnc4
+│   │   │       ├── values-mcc724-mnc5
+│   │   │       ├── values-mcc724-mnc6
+│   │   │       ├── values-mcc730-mnc1
+│   │   │       ├── values-mcc730-mnc10
+│   │   │       ├── values-mcc730-mnc2
+│   │   │       ├── values-mcc730-mnc9
+│   │   │       ├── values-mcc732-mnc101
+│   │   │       ├── values-mcc732-mnc103
+│   │   │       ├── values-mcc732-mnc111
+│   │   │       ├── values-mcc732-mnc12
+│   │   │       ├── values-mcc732-mnc123
+│   │   │       ├── values-mcc732-mnc130
+│   │   │       ├── values-mcc734-mnc4
+│   │   │       ├── values-mcc740-mnc1
+│   │   │       ├── values-mcc744-mnc2
+│   │   │       └── values-mcc748-mnc10
+│   │   ├── PixelLauncherCustomOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── PixelSetupWizardOverlay
+│   │   │   └── res
+│   │   │       ├── raw
+│   │   │       ├── values
+│   │   │       └── values-land
+│   │   ├── SettingsGoogleOverlay
+│   │   │   └── res
+│   │   │       ├── drawable-mcc310-mnc160
+│   │   │       ├── drawable-mcc310-mnc200
+│   │   │       ├── drawable-mcc310-mnc210
+│   │   │       ├── drawable-mcc310-mnc220
+│   │   │       ├── drawable-mcc310-mnc230
+│   │   │       ├── drawable-mcc310-mnc240
+│   │   │       ├── drawable-mcc310-mnc250
+│   │   │       ├── drawable-mcc310-mnc26
+│   │   │       ├── drawable-mcc310-mnc260
+│   │   │       ├── drawable-mcc310-mnc270
+│   │   │       ├── drawable-mcc310-mnc300
+│   │   │       ├── drawable-mcc310-mnc310
+│   │   │       ├── drawable-mcc310-mnc4
+│   │   │       ├── drawable-mcc310-mnc490
+│   │   │       ├── drawable-mcc310-mnc530
+│   │   │       ├── drawable-mcc310-mnc590
+│   │   │       ├── drawable-mcc310-mnc640
+│   │   │       ├── drawable-mcc310-mnc660
+│   │   │       ├── drawable-mcc310-mnc800
+│   │   │       ├── drawable-mcc311-mnc480
+│   │   │       ├── drawable-nodpi
+│   │   │       ├── drawable-xxxhdpi
+│   │   │       ├── raw
+│   │   │       ├── values
+│   │   │       ├── values-af
+│   │   │       ├── values-am
+│   │   │       ├── values-ar
+│   │   │       ├── values-ar-rXB
+│   │   │       ├── values-as
+│   │   │       ├── values-az
+│   │   │       ├── values-be
+│   │   │       ├── values-bg
+│   │   │       ├── values-bn
+│   │   │       ├── values-bs
+│   │   │       ├── values-b+sr+Latn
+│   │   │       ├── values-ca
+│   │   │       ├── values-cs
+│   │   │       ├── values-da
+│   │   │       ├── values-de
+│   │   │       ├── values-el
+│   │   │       ├── values-en-rAU
+│   │   │       ├── values-en-rCA
+│   │   │       ├── values-en-rGB
+│   │   │       ├── values-en-rIN
+│   │   │       ├── values-en-rXA
+│   │   │       ├── values-es
+│   │   │       ├── values-es-rUS
+│   │   │       ├── values-et
+│   │   │       ├── values-eu
+│   │   │       ├── values-fa
+│   │   │       ├── values-fi
+│   │   │       ├── values-fr
+│   │   │       ├── values-fr-rCA
+│   │   │       ├── values-gl
+│   │   │       ├── values-gu
+│   │   │       ├── values-hi
+│   │   │       ├── values-hr
+│   │   │       ├── values-hu
+│   │   │       ├── values-hy
+│   │   │       ├── values-in
+│   │   │       ├── values-is
+│   │   │       ├── values-it
+│   │   │       ├── values-iw
+│   │   │       ├── values-ja
+│   │   │       ├── values-ka
+│   │   │       ├── values-kk
+│   │   │       ├── values-km
+│   │   │       ├── values-kn
+│   │   │       ├── values-ko
+│   │   │       ├── values-ky
+│   │   │       ├── values-lo
+│   │   │       ├── values-lt
+│   │   │       ├── values-lv
+│   │   │       ├── values-mcc262-mnc1-de
+│   │   │       ├── values-mcc262-mnc2-de
+│   │   │       ├── values-mcc262-mnc9-de
+│   │   │       ├── values-mcc310-mnc10
+│   │   │       ├── values-mcc310-mnc120
+│   │   │       ├── values-mcc310-mnc160
+│   │   │       ├── values-mcc310-mnc200
+│   │   │       ├── values-mcc310-mnc210
+│   │   │       ├── values-mcc310-mnc220
+│   │   │       ├── values-mcc310-mnc230
+│   │   │       ├── values-mcc310-mnc240
+│   │   │       ├── values-mcc310-mnc250
+│   │   │       ├── values-mcc310-mnc26
+│   │   │       ├── values-mcc310-mnc260
+│   │   │       ├── values-mcc310-mnc270
+│   │   │       ├── values-mcc310-mnc300
+│   │   │       ├── values-mcc310-mnc310
+│   │   │       ├── values-mcc310-mnc4
+│   │   │       ├── values-mcc310-mnc490
+│   │   │       ├── values-mcc310-mnc530
+│   │   │       ├── values-mcc310-mnc590
+│   │   │       ├── values-mcc310-mnc640
+│   │   │       ├── values-mcc310-mnc660
+│   │   │       ├── values-mcc310-mnc800
+│   │   │       ├── values-mcc311-mnc480
+│   │   │       ├── values-mcc311-mnc490
+│   │   │       ├── values-mcc311-mnc870
+│   │   │       ├── values-mcc312-mnc530
+│   │   │       ├── values-mcc440-mnc20
+│   │   │       ├── values-mk
+│   │   │       ├── values-ml
+│   │   │       ├── values-mn
+│   │   │       ├── values-mr
+│   │   │       ├── values-ms
+│   │   │       ├── values-my
+│   │   │       ├── values-nb
+│   │   │       ├── values-ne
+│   │   │       ├── values-nl
+│   │   │       ├── values-or
+│   │   │       ├── values-pa
+│   │   │       ├── values-pl
+│   │   │       ├── values-pt
+│   │   │       ├── values-pt-rBR
+│   │   │       ├── values-pt-rPT
+│   │   │       ├── values-ro
+│   │   │       ├── values-ru
+│   │   │       ├── values-si
+│   │   │       ├── values-sk
+│   │   │       ├── values-sl
+│   │   │       ├── values-sq
+│   │   │       ├── values-sr
+│   │   │       ├── values-sv
+│   │   │       ├── values-sw
+│   │   │       ├── values-ta
+│   │   │       ├── values-te
+│   │   │       ├── values-th
+│   │   │       ├── values-tl
+│   │   │       ├── values-tr
+│   │   │       ├── values-uk
+│   │   │       ├── values-ur
+│   │   │       ├── values-uz
+│   │   │       ├── values-vi
+│   │   │       ├── values-zh-rCN
+│   │   │       ├── values-zh-rHK
+│   │   │       ├── values-zh-rTW
+│   │   │       └── values-zu
+│   │   ├── SettingsGoogleOverlayPixel2022
+│   │   │   └── res
+│   │   │       ├── drawable-night-nodpi
+│   │   │       ├── drawable-nodpi
+│   │   │       ├── raw
+│   │   │       └── values
+│   │   ├── SettingsProviderOverlay
+│   │   │   └── res
+│   │   │       ├── values
+│   │   │       ├── values-af
+│   │   │       ├── values-am
+│   │   │       ├── values-ar
+│   │   │       ├── values-ar-rXB
+│   │   │       ├── values-as
+│   │   │       ├── values-az
+│   │   │       ├── values-be
+│   │   │       ├── values-bg
+│   │   │       ├── values-bn
+│   │   │       ├── values-bs
+│   │   │       ├── values-b+sr+Latn
+│   │   │       ├── values-ca
+│   │   │       ├── values-cs
+│   │   │       ├── values-da
+│   │   │       ├── values-de
+│   │   │       ├── values-el
+│   │   │       ├── values-en-rAU
+│   │   │       ├── values-en-rCA
+│   │   │       ├── values-en-rGB
+│   │   │       ├── values-en-rIN
+│   │   │       ├── values-en-rXA
+│   │   │       ├── values-es
+│   │   │       ├── values-es-rUS
+│   │   │       ├── values-et
+│   │   │       ├── values-eu
+│   │   │       ├── values-fa
+│   │   │       ├── values-fi
+│   │   │       ├── values-fr
+│   │   │       ├── values-fr-rCA
+│   │   │       ├── values-gl
+│   │   │       ├── values-gu
+│   │   │       ├── values-hi
+│   │   │       ├── values-hr
+│   │   │       ├── values-hu
+│   │   │       ├── values-hy
+│   │   │       ├── values-in
+│   │   │       ├── values-is
+│   │   │       ├── values-it
+│   │   │       ├── values-iw
+│   │   │       ├── values-ja
+│   │   │       ├── values-ka
+│   │   │       ├── values-kk
+│   │   │       ├── values-km
+│   │   │       ├── values-kn
+│   │   │       ├── values-ko
+│   │   │       ├── values-ky
+│   │   │       ├── values-lo
+│   │   │       ├── values-lt
+│   │   │       ├── values-lv
+│   │   │       ├── values-mk
+│   │   │       ├── values-ml
+│   │   │       ├── values-mn
+│   │   │       ├── values-mr
+│   │   │       ├── values-ms
+│   │   │       ├── values-my
+│   │   │       ├── values-nb
+│   │   │       ├── values-ne
+│   │   │       ├── values-nl
+│   │   │       ├── values-or
+│   │   │       ├── values-pa
+│   │   │       ├── values-pl
+│   │   │       ├── values-pt
+│   │   │       ├── values-pt-rBR
+│   │   │       ├── values-pt-rPT
+│   │   │       ├── values-ro
+│   │   │       ├── values-ru
+│   │   │       ├── values-si
+│   │   │       ├── values-sk
+│   │   │       ├── values-sl
+│   │   │       ├── values-sq
+│   │   │       ├── values-sr
+│   │   │       ├── values-sv
+│   │   │       ├── values-sw
+│   │   │       ├── values-ta
+│   │   │       ├── values-te
+│   │   │       ├── values-th
+│   │   │       ├── values-tl
+│   │   │       ├── values-tr
+│   │   │       ├── values-uk
+│   │   │       ├── values-ur
+│   │   │       ├── values-uz
+│   │   │       ├── values-vi
+│   │   │       ├── values-zh-rCN
+│   │   │       ├── values-zh-rHK
+│   │   │       ├── values-zh-rTW
+│   │   │       └── values-zu
+│   │   ├── StorageManagerGoogle
+│   │   │   └── res
+│   │   │       ├── drawable-mcc310-mnc160
+│   │   │       ├── drawable-mcc310-mnc200
+│   │   │       ├── drawable-mcc310-mnc210
+│   │   │       ├── drawable-mcc310-mnc220
+│   │   │       ├── drawable-mcc310-mnc230
+│   │   │       ├── drawable-mcc310-mnc240
+│   │   │       ├── drawable-mcc310-mnc250
+│   │   │       ├── drawable-mcc310-mnc26
+│   │   │       ├── drawable-mcc310-mnc260
+│   │   │       ├── drawable-mcc310-mnc270
+│   │   │       ├── drawable-mcc310-mnc300
+│   │   │       ├── drawable-mcc310-mnc310
+│   │   │       ├── drawable-mcc310-mnc490
+│   │   │       ├── drawable-mcc310-mnc530
+│   │   │       ├── drawable-mcc310-mnc590
+│   │   │       ├── drawable-mcc310-mnc640
+│   │   │       ├── drawable-mcc310-mnc660
+│   │   │       ├── drawable-mcc310-mnc800
+│   │   │       ├── values
+│   │   │       ├── values-mcc310-mnc10
+│   │   │       ├── values-mcc310-mnc120
+│   │   │       ├── values-mcc310-mnc160
+│   │   │       ├── values-mcc310-mnc200
+│   │   │       ├── values-mcc310-mnc210
+│   │   │       ├── values-mcc310-mnc220
+│   │   │       ├── values-mcc310-mnc230
+│   │   │       ├── values-mcc310-mnc240
+│   │   │       ├── values-mcc310-mnc250
+│   │   │       ├── values-mcc310-mnc26
+│   │   │       ├── values-mcc310-mnc260
+│   │   │       ├── values-mcc310-mnc270
+│   │   │       ├── values-mcc310-mnc300
+│   │   │       ├── values-mcc310-mnc310
+│   │   │       ├── values-mcc310-mnc490
+│   │   │       ├── values-mcc310-mnc530
+│   │   │       ├── values-mcc310-mnc590
+│   │   │       ├── values-mcc310-mnc640
+│   │   │       ├── values-mcc310-mnc660
+│   │   │       ├── values-mcc310-mnc800
+│   │   │       ├── values-mcc311-mnc490
+│   │   │       ├── values-mcc311-mnc870
+│   │   │       └── values-mcc312-mnc530
+│   │   ├── SystemUIGoogleOverlay
+│   │   │   └── res
+│   │   │       ├── drawable-mcc310-mnc150
+│   │   │       ├── drawable-mcc310-mnc160
+│   │   │       ├── drawable-mcc310-mnc170
+│   │   │       ├── drawable-mcc310-mnc200
+│   │   │       ├── drawable-mcc310-mnc210
+│   │   │       ├── drawable-mcc310-mnc220
+│   │   │       ├── drawable-mcc310-mnc230
+│   │   │       ├── drawable-mcc310-mnc240
+│   │   │       ├── drawable-mcc310-mnc250
+│   │   │       ├── drawable-mcc310-mnc26
+│   │   │       ├── drawable-mcc310-mnc260
+│   │   │       ├── drawable-mcc310-mnc270
+│   │   │       ├── drawable-mcc310-mnc280
+│   │   │       ├── drawable-mcc310-mnc30
+│   │   │       ├── drawable-mcc310-mnc300
+│   │   │       ├── drawable-mcc310-mnc310
+│   │   │       ├── drawable-mcc310-mnc4
+│   │   │       ├── drawable-mcc310-mnc410
+│   │   │       ├── drawable-mcc310-mnc490
+│   │   │       ├── drawable-mcc310-mnc530
+│   │   │       ├── drawable-mcc310-mnc560
+│   │   │       ├── drawable-mcc310-mnc590
+│   │   │       ├── drawable-mcc310-mnc640
+│   │   │       ├── drawable-mcc310-mnc660
+│   │   │       ├── drawable-mcc310-mnc800
+│   │   │       ├── drawable-mcc310-mnc950
+│   │   │       ├── drawable-mcc311-mnc180
+│   │   │       ├── drawable-mcc311-mnc480
+│   │   │       ├── drawable-mcc312-mnc670
+│   │   │       ├── drawable-mcc313-mnc100
+│   │   │       ├── drawable-mcc313-mnc130
+│   │   │       ├── drawable-mcc313-mnc140
+│   │   │       ├── values
+│   │   │       ├── values-af
+│   │   │       ├── values-am
+│   │   │       ├── values-ar
+│   │   │       ├── values-ar-rXB
+│   │   │       ├── values-as
+│   │   │       ├── values-az
+│   │   │       ├── values-be
+│   │   │       ├── values-bg
+│   │   │       ├── values-bn
+│   │   │       ├── values-bs
+│   │   │       ├── values-b+sr+Latn
+│   │   │       ├── values-ca
+│   │   │       ├── values-cs
+│   │   │       ├── values-da
+│   │   │       ├── values-de
+│   │   │       ├── values-el
+│   │   │       ├── values-en-rAU
+│   │   │       ├── values-en-rCA
+│   │   │       ├── values-en-rGB
+│   │   │       ├── values-en-rIN
+│   │   │       ├── values-en-rXA
+│   │   │       ├── values-es
+│   │   │       ├── values-es-rUS
+│   │   │       ├── values-et
+│   │   │       ├── values-eu
+│   │   │       ├── values-fa
+│   │   │       ├── values-fi
+│   │   │       ├── values-fr
+│   │   │       ├── values-fr-rCA
+│   │   │       ├── values-gl
+│   │   │       ├── values-gu
+│   │   │       ├── values-hi
+│   │   │       ├── values-hr
+│   │   │       ├── values-hu
+│   │   │       ├── values-hy
+│   │   │       ├── values-in
+│   │   │       ├── values-is
+│   │   │       ├── values-it
+│   │   │       ├── values-iw
+│   │   │       ├── values-ja
+│   │   │       ├── values-ka
+│   │   │       ├── values-kk
+│   │   │       ├── values-km
+│   │   │       ├── values-kn
+│   │   │       ├── values-ko
+│   │   │       ├── values-ky
+│   │   │       ├── values-lo
+│   │   │       ├── values-lt
+│   │   │       ├── values-lv
+│   │   │       ├── values-mcc310-mnc10
+│   │   │       ├── values-mcc310-mnc120
+│   │   │       ├── values-mcc310-mnc160
+│   │   │       ├── values-mcc310-mnc200
+│   │   │       ├── values-mcc310-mnc210
+│   │   │       ├── values-mcc310-mnc220
+│   │   │       ├── values-mcc310-mnc230
+│   │   │       ├── values-mcc310-mnc240
+│   │   │       ├── values-mcc310-mnc250
+│   │   │       ├── values-mcc310-mnc26
+│   │   │       ├── values-mcc310-mnc260
+│   │   │       ├── values-mcc310-mnc270
+│   │   │       ├── values-mcc310-mnc300
+│   │   │       ├── values-mcc310-mnc310
+│   │   │       ├── values-mcc310-mnc4
+│   │   │       ├── values-mcc310-mnc490
+│   │   │       ├── values-mcc310-mnc530
+│   │   │       ├── values-mcc310-mnc590
+│   │   │       ├── values-mcc310-mnc640
+│   │   │       ├── values-mcc310-mnc660
+│   │   │       ├── values-mcc310-mnc800
+│   │   │       ├── values-mcc311-mnc480
+│   │   │       ├── values-mcc311-mnc490
+│   │   │       ├── values-mcc311-mnc870
+│   │   │       ├── values-mcc312-mnc530
+│   │   │       ├── values-mcc440-mnc20
+│   │   │       ├── values-mk
+│   │   │       ├── values-ml
+│   │   │       ├── values-mn
+│   │   │       ├── values-mr
+│   │   │       ├── values-ms
+│   │   │       ├── values-my
+│   │   │       ├── values-nb
+│   │   │       ├── values-ne
+│   │   │       ├── values-nl
+│   │   │       ├── values-or
+│   │   │       ├── values-pa
+│   │   │       ├── values-pl
+│   │   │       ├── values-pt
+│   │   │       ├── values-pt-rBR
+│   │   │       ├── values-pt-rPT
+│   │   │       ├── values-ro
+│   │   │       ├── values-ru
+│   │   │       ├── values-si
+│   │   │       ├── values-sk
+│   │   │       ├── values-sl
+│   │   │       ├── values-sq
+│   │   │       ├── values-sr
+│   │   │       ├── values-sv
+│   │   │       ├── values-sw
+│   │   │       ├── values-ta
+│   │   │       ├── values-te
+│   │   │       ├── values-th
+│   │   │       ├── values-tl
+│   │   │       ├── values-tr
+│   │   │       ├── values-uk
+│   │   │       ├── values-ur
+│   │   │       ├── values-uz
+│   │   │       ├── values-vi
+│   │   │       ├── values-zh-rCN
+│   │   │       ├── values-zh-rHK
+│   │   │       ├── values-zh-rTW
+│   │   │       └── values-zu
+│   │   ├── TelecomOverlay
+│   │   │   └── res
+│   │   │       ├── drawable-mcc310-mnc160
+│   │   │       ├── drawable-mcc310-mnc200
+│   │   │       ├── drawable-mcc310-mnc210
+│   │   │       ├── drawable-mcc310-mnc220
+│   │   │       ├── drawable-mcc310-mnc230
+│   │   │       ├── drawable-mcc310-mnc240
+│   │   │       ├── drawable-mcc310-mnc250
+│   │   │       ├── drawable-mcc310-mnc26
+│   │   │       ├── drawable-mcc310-mnc260
+│   │   │       ├── drawable-mcc310-mnc270
+│   │   │       ├── drawable-mcc310-mnc300
+│   │   │       ├── drawable-mcc310-mnc310
+│   │   │       ├── drawable-mcc310-mnc490
+│   │   │       ├── drawable-mcc310-mnc530
+│   │   │       ├── drawable-mcc310-mnc590
+│   │   │       ├── drawable-mcc310-mnc640
+│   │   │       ├── drawable-mcc310-mnc660
+│   │   │       ├── drawable-mcc310-mnc800
+│   │   │       ├── mipmap-hdpi
+│   │   │       ├── mipmap-mdpi
+│   │   │       ├── mipmap-xhdpi
+│   │   │       ├── mipmap-xxhdpi
+│   │   │       ├── mipmap-xxxhdpi
+│   │   │       ├── values
+│   │   │       ├── values-mcc310-mnc10
+│   │   │       ├── values-mcc310-mnc120
+│   │   │       ├── values-mcc310-mnc160
+│   │   │       ├── values-mcc310-mnc200
+│   │   │       ├── values-mcc310-mnc210
+│   │   │       ├── values-mcc310-mnc220
+│   │   │       ├── values-mcc310-mnc230
+│   │   │       ├── values-mcc310-mnc240
+│   │   │       ├── values-mcc310-mnc250
+│   │   │       ├── values-mcc310-mnc26
+│   │   │       ├── values-mcc310-mnc260
+│   │   │       ├── values-mcc310-mnc270
+│   │   │       ├── values-mcc310-mnc300
+│   │   │       ├── values-mcc310-mnc310
+│   │   │       ├── values-mcc310-mnc490
+│   │   │       ├── values-mcc310-mnc530
+│   │   │       ├── values-mcc310-mnc590
+│   │   │       ├── values-mcc310-mnc640
+│   │   │       ├── values-mcc310-mnc660
+│   │   │       ├── values-mcc310-mnc800
+│   │   │       ├── values-mcc311-mnc490
+│   │   │       ├── values-mcc311-mnc870
+│   │   │       └── values-mcc312-mnc530
+│   │   ├── TelephonyProviderOverlay
+│   │   │   └── res
+│   │   │       ├── mipmap-hdpi
+│   │   │       ├── mipmap-mdpi
+│   │   │       ├── mipmap-xhdpi
+│   │   │       ├── mipmap-xxhdpi
+│   │   │       ├── mipmap-xxxhdpi
+│   │   │       └── values
+│   │   ├── TeleServiceOverlay
+│   │   │   └── res
+│   │   │       ├── mipmap-hdpi
+│   │   │       ├── mipmap-mdpi
+│   │   │       ├── mipmap-xhdpi
+│   │   │       ├── mipmap-xxhdpi
+│   │   │       ├── mipmap-xxxhdpi
+│   │   │       ├── values
+│   │   │       ├── values-mcc262-mnc1-de
+│   │   │       ├── values-mcc262-mnc2-de
+│   │   │       ├── values-mcc262-mnc9-de
+│   │   │       ├── values-mcc310-mnc120
+│   │   │       └── values-mcc312-mnc530
+│   │   └── TraceurOverlay
+│   │       └── res
+│   │           ├── drawable-mcc310-mnc160
+│   │           ├── drawable-mcc310-mnc200
+│   │           ├── drawable-mcc310-mnc210
+│   │           ├── drawable-mcc310-mnc220
+│   │           ├── drawable-mcc310-mnc230
+│   │           ├── drawable-mcc310-mnc240
+│   │           ├── drawable-mcc310-mnc250
+│   │           ├── drawable-mcc310-mnc26
+│   │           ├── drawable-mcc310-mnc260
+│   │           ├── drawable-mcc310-mnc270
+│   │           ├── drawable-mcc310-mnc300
+│   │           ├── drawable-mcc310-mnc310
+│   │           ├── drawable-mcc310-mnc490
+│   │           ├── drawable-mcc310-mnc530
+│   │           ├── drawable-mcc310-mnc590
+│   │           ├── drawable-mcc310-mnc640
+│   │           ├── drawable-mcc310-mnc660
+│   │           ├── drawable-mcc310-mnc800
+│   │           ├── values
+│   │           ├── values-mcc310-mnc10
+│   │           ├── values-mcc310-mnc120
+│   │           ├── values-mcc310-mnc160
+│   │           ├── values-mcc310-mnc200
+│   │           ├── values-mcc310-mnc210
+│   │           ├── values-mcc310-mnc220
+│   │           ├── values-mcc310-mnc230
+│   │           ├── values-mcc310-mnc240
+│   │           ├── values-mcc310-mnc250
+│   │           ├── values-mcc310-mnc26
+│   │           ├── values-mcc310-mnc260
+│   │           ├── values-mcc310-mnc270
+│   │           ├── values-mcc310-mnc300
+│   │           ├── values-mcc310-mnc310
+│   │           ├── values-mcc310-mnc490
+│   │           ├── values-mcc310-mnc530
+│   │           ├── values-mcc310-mnc590
+│   │           ├── values-mcc310-mnc640
+│   │           ├── values-mcc310-mnc660
+│   │           ├── values-mcc310-mnc800
+│   │           ├── values-mcc311-mnc490
+│   │           ├── values-mcc311-mnc870
+│   │           └── values-mcc312-mnc530
+│   └── tools
+├── codeaurora
+│   └── telephony
+│       ├── extphone
+│       │   └── src
+│       │       └── com
+│       │           └── qti
+│       │               └── extphone
+│       ├── ims
+│       │   ├── ConfURIDialer
+│       │   │   ├── res
+│       │   │   │   ├── drawable-hdpi
+│       │   │   │   ├── drawable-mdpi
+│       │   │   │   ├── drawable-xhdpi
+│       │   │   │   ├── drawable-xxhdpi
+│       │   │   │   ├── layout
+│       │   │   │   └── values
+│       │   │   └── src
+│       │   │       └── com
+│       │   │           └── qti
+│       │   │               └── confuridialer
+│       │   ├── ims-ext-common
+│       │   │   └── src
+│       │   │       └── org
+│       │   │           └── codeaurora
+│       │   │               └── ims
+│       │   │                   ├── internal
+│       │   │                   └── utils
+│       │   └── InCallUi
+│       │       ├── res
+│       │       │   ├── drawable-hdpi
+│       │       │   ├── drawable-mdpi
+│       │       │   ├── drawable-xhdpi
+│       │       │   ├── drawable-xxhdpi
+│       │       │   ├── layout
+│       │       │   └── values
+│       │       └── src
+│       │           └── com
+│       │               └── qti
+│       │                   └── editnumber
+│       ├── internal
+│       │   └── src
+│       │       └── org
+│       │           └── codeaurora
+│       │               └── internal
+│       ├── qti-hidl-wrapper
+│       └── qti-utils
+│           └── src
+│               └── org
+│                   └── codeaurora
+│                       └── utils
+├── custom-preference
+│   ├── res
+│   │   └── values
+│   └── src
+│       └── com
+│           └── android
+│               └── settings
+│                   └── custom
+│                       └── preference
+├── gms
+│   ├── common
+│   │   └── proprietary
+│   │       ├── product
+│   │       │   ├── app
+│   │       │   │   ├── CalculatorGooglePrebuilt
+│   │       │   │   ├── CalendarGooglePrebuilt
+│   │       │   │   ├── Chrome
+│   │       │   │   ├── Chrome-Stub
+│   │       │   │   ├── GoogleContacts
+│   │       │   │   ├── GoogleTTS
+│   │       │   │   ├── LatinIMEGooglePrebuilt
+│   │       │   │   ├── LocationHistoryPrebuilt
+│   │       │   │   ├── MarkupGoogle
+│   │       │   │   ├── Photos
+│   │       │   │   ├── PixelThemesStub
+│   │       │   │   ├── PrebuiltDeskClockGoogle
+│   │       │   │   ├── SoundAmplifierPrebuilt
+│   │       │   │   ├── SoundPickerPrebuilt
+│   │       │   │   ├── talkback
+│   │       │   │   ├── TrichromeLibrary
+│   │       │   │   ├── TrichromeLibrary-Stub
+│   │       │   │   ├── WebViewGoogle
+│   │       │   │   └── WebViewGoogle-Stub
+│   │       │   ├── etc
+│   │       │   │   ├── default-permissions
+│   │       │   │   ├── permissions
+│   │       │   │   ├── preferred-apps
+│   │       │   │   ├── security
+│   │       │   │   │   └── fsverity
+│   │       │   │   └── sysconfig
+│   │       │   ├── framework
+│   │       │   └── priv-app
+│   │       │       ├── AndroidAutoStubPrebuilt
+│   │       │       ├── ConfigUpdater
+│   │       │       ├── DeviceIntelligenceNetworkPrebuilt
+│   │       │       ├── DevicePersonalizationPrebuiltPixel2020
+│   │       │       ├── FilesPrebuilt
+│   │       │       ├── GoogleDialer
+│   │       │       ├── GoogleOneTimeInitializer
+│   │       │       ├── GoogleRestorePrebuilt
+│   │       │       ├── PartnerSetupPrebuilt
+│   │       │       ├── Phonesky
+│   │       │       ├── PrebuiltBugle
+│   │       │       ├── PrebuiltGmsCore
+│   │       │       │   └── m
+│   │       │       │       └── independent
+│   │       │       ├── SafetyHubPrebuilt
+│   │       │       ├── ScribePrebuilt
+│   │       │       ├── SecurityHubPrebuilt
+│   │       │       ├── SettingsIntelligenceGooglePrebuilt
+│   │       │       ├── SetupWizardPrebuilt
+│   │       │       ├── TurboPrebuilt
+│   │       │       ├── Velvet
+│   │       │       └── WellbeingPrebuilt
+│   │       ├── system
+│   │       │   ├── app
+│   │       │   │   ├── GoogleExtShared
+│   │       │   │   └── GooglePrintRecommendationService
+│   │       │   ├── etc
+│   │       │   │   └── permissions
+│   │       │   └── priv-app
+│   │       │       ├── DocumentsUIGoogle
+│   │       │       ├── GooglePackageInstaller
+│   │       │       └── TagGoogle
+│   │       └── system_ext
+│   │           ├── app
+│   │           │   ├── EmergencyInfoGoogleNoUi
+│   │           │   └── Flipendo
+│   │           ├── etc
+│   │           │   └── permissions
+│   │           └── priv-app
+│   │               ├── GoogleServicesFramework
+│   │               ├── NexusLauncherRelease
+│   │               ├── PixelSetupWizard
+│   │               ├── StorageManagerGoogle
+│   │               └── WallpaperPickerGoogleRelease
+│   ├── extras
+│   │   ├── pixel_dependencies
+│   │   └── proprietary
+│   │       ├── product
+│   │       │   ├── app
+│   │       │   │   ├── arcore
+│   │       │   │   ├── GoogleCamera
+│   │       │   │   ├── NgaResources
+│   │       │   │   ├── PixelThemesStub2022_and_newer
+│   │       │   │   └── PixelWallpapers2022
+│   │       │   ├── etc
+│   │       │   │   ├── permissions
+│   │       │   │   └── sysconfig
+│   │       │   └── priv-app
+│   │       │       ├── DreamlinerPrebuilt
+│   │       │       ├── DreamlinerUpdater
+│   │       │       ├── PixelLiveWallpaperPrebuilt
+│   │       │       └── RecorderPrebuilt
+│   │       └── system_ext
+│   │           ├── lib64
+│   │           └── priv-app
+│   │               └── TurboAdapter
+│   ├── overlay
+│   │   ├── GmsConfigOverlayCommon
+│   │   │   └── res
+│   │   │       ├── values
+│   │   │       └── xml
+│   │   ├── GmsConfigOverlayComms
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── GmsConfigOverlayContactsProvider
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── GmsConfigOverlayGeotz
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── GmsConfigOverlayGSA
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── GmsConfigOverlaySettings
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── GmsConfigOverlaySettingsProvider
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── GmsConfigOverlayTelecom
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── GmsConfigOverlayTeleService
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── GmsConfigOverlayTurbo
+│   │   │   └── res
+│   │   │       ├── drawable-nodpi
+│   │   │       ├── raw
+│   │   │       ├── values
+│   │   │       ├── values-af
+│   │   │       ├── values-am
+│   │   │       ├── values-ar
+│   │   │       ├── values-as
+│   │   │       ├── values-az
+│   │   │       ├── values-be
+│   │   │       ├── values-bg
+│   │   │       ├── values-bn
+│   │   │       ├── values-bs
+│   │   │       ├── values-b+sr+Latn
+│   │   │       ├── values-ca
+│   │   │       ├── values-cs
+│   │   │       ├── values-da
+│   │   │       ├── values-de
+│   │   │       ├── values-el
+│   │   │       ├── values-en-rAU
+│   │   │       ├── values-en-rCA
+│   │   │       ├── values-en-rGB
+│   │   │       ├── values-en-rIN
+│   │   │       ├── values-en-rXC
+│   │   │       ├── values-es
+│   │   │       ├── values-es-rUS
+│   │   │       ├── values-et
+│   │   │       ├── values-eu
+│   │   │       ├── values-fa
+│   │   │       ├── values-fi
+│   │   │       ├── values-fr
+│   │   │       ├── values-fr-rCA
+│   │   │       ├── values-gl
+│   │   │       ├── values-gu
+│   │   │       ├── values-hi
+│   │   │       ├── values-hr
+│   │   │       ├── values-hu
+│   │   │       ├── values-hy
+│   │   │       ├── values-in
+│   │   │       ├── values-is
+│   │   │       ├── values-it
+│   │   │       ├── values-iw
+│   │   │       ├── values-ja
+│   │   │       ├── values-ka
+│   │   │       ├── values-kk
+│   │   │       ├── values-km
+│   │   │       ├── values-kn
+│   │   │       ├── values-ko
+│   │   │       ├── values-ky
+│   │   │       ├── values-lo
+│   │   │       ├── values-lt
+│   │   │       ├── values-lv
+│   │   │       ├── values-mk
+│   │   │       ├── values-ml
+│   │   │       ├── values-mn
+│   │   │       ├── values-mr
+│   │   │       ├── values-ms
+│   │   │       ├── values-my
+│   │   │       ├── values-nb
+│   │   │       ├── values-ne
+│   │   │       ├── values-nl
+│   │   │       ├── values-or
+│   │   │       ├── values-pa
+│   │   │       ├── values-pl
+│   │   │       ├── values-pt
+│   │   │       ├── values-pt-rBR
+│   │   │       ├── values-pt-rPT
+│   │   │       ├── values-ro
+│   │   │       ├── values-ru
+│   │   │       ├── values-si
+│   │   │       ├── values-sk
+│   │   │       ├── values-sl
+│   │   │       ├── values-sq
+│   │   │       ├── values-sr
+│   │   │       ├── values-sv
+│   │   │       ├── values-sw
+│   │   │       ├── values-ta
+│   │   │       ├── values-te
+│   │   │       ├── values-th
+│   │   │       ├── values-tl
+│   │   │       ├── values-tr
+│   │   │       ├── values-uk
+│   │   │       ├── values-ur
+│   │   │       ├── values-uz
+│   │   │       ├── values-vi
+│   │   │       ├── values-zh-rCN
+│   │   │       ├── values-zh-rHK
+│   │   │       ├── values-zh-rTW
+│   │   │       └── values-zu
+│   │   ├── GoogleConfigOverlay
+│   │   │   └── res
+│   │   │       ├── values
+│   │   │       └── xml
+│   │   ├── GoogleSettingsOverlay
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── GoogleSystemUIOverlay
+│   │   │   └── res
+│   │   │       ├── drawable
+│   │   │       └── values
+│   │   ├── PixelConfigOverlayCommon
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── PixelConfigOverlayWallpaper
+│   │   │   └── res
+│   │   │       └── values
+│   │   ├── PixelDocumentsUIGoogleOverlay
+│   │   │   └── res
+│   │   │       ├── color
+│   │   │       ├── drawable
+│   │   │       ├── drawable-ldrtl
+│   │   │       ├── values
+│   │   │       └── values-night
+│   │   ├── PixelSetupWizardOverlay
+│   │   │   └── res
+│   │   │       ├── values
+│   │   │       └── values-land
+│   │   ├── PixelSetupWizardOverlay2019
+│   │   │   └── res
+│   │   │       └── values
+│   │   └── PixelSetupWizardStringsOverlay
+│   │       └── res
+│   │           ├── values
+│   │           ├── values-af
+│   │           ├── values-am
+│   │           ├── values-ar
+│   │           ├── values-ar-rXB
+│   │           ├── values-as
+│   │           ├── values-az
+│   │           ├── values-be
+│   │           ├── values-bg
+│   │           ├── values-bn
+│   │           ├── values-bs
+│   │           ├── values-b+sr+Latn
+│   │           ├── values-ca
+│   │           ├── values-cs
+│   │           ├── values-da
+│   │           ├── values-de
+│   │           ├── values-el
+│   │           ├── values-en-rAU
+│   │           ├── values-en-rCA
+│   │           ├── values-en-rGB
+│   │           ├── values-en-rIN
+│   │           ├── values-es
+│   │           ├── values-es-rUS
+│   │           ├── values-et
+│   │           ├── values-eu
+│   │           ├── values-fa
+│   │           ├── values-fi
+│   │           ├── values-fr
+│   │           ├── values-fr-rCA
+│   │           ├── values-gl
+│   │           ├── values-gu
+│   │           ├── values-hi
+│   │           ├── values-hr
+│   │           ├── values-hu
+│   │           ├── values-hy
+│   │           ├── values-in
+│   │           ├── values-is
+│   │           ├── values-it
+│   │           ├── values-iw
+│   │           ├── values-ja
+│   │           ├── values-ka
+│   │           ├── values-kk
+│   │           ├── values-km
+│   │           ├── values-kn
+│   │           ├── values-ko
+│   │           ├── values-ky
+│   │           ├── values-lo
+│   │           ├── values-lt
+│   │           ├── values-lv
+│   │           ├── values-mk
+│   │           ├── values-ml
+│   │           ├── values-mn
+│   │           ├── values-mr
+│   │           ├── values-ms
+│   │           ├── values-my
+│   │           ├── values-nb
+│   │           ├── values-ne
+│   │           ├── values-nl
+│   │           ├── values-or
+│   │           ├── values-pa
+│   │           ├── values-pl
+│   │           ├── values-pt
+│   │           ├── values-pt-rBR
+│   │           ├── values-pt-rPT
+│   │           ├── values-ro
+│   │           ├── values-ru
+│   │           ├── values-si
+│   │           ├── values-sk
+│   │           ├── values-sl
+│   │           ├── values-sq
+│   │           ├── values-sr
+│   │           ├── values-sv
+│   │           ├── values-sw
+│   │           ├── values-ta
+│   │           ├── values-te
+│   │           ├── values-th
+│   │           ├── values-tl
+│   │           ├── values-tr
+│   │           ├── values-uk
+│   │           ├── values-ur
+│   │           ├── values-uz
+│   │           ├── values-vi
+│   │           ├── values-zh-rCN
+│   │           ├── values-zh-rHK
+│   │           ├── values-zh-rTW
+│   │           └── values-zu
+│   ├── products
+│   └── tools
+├── pixel-framework
+│   ├── proto
+│   ├── SettingsGoogle
+│   │   ├── libs
+│   │   ├── res
+│   │   │   ├── anim
+│   │   │   ├── animator
+│   │   │   ├── animator-ldrtl
+│   │   │   ├── anim-ldrtl
+│   │   │   ├── color
+│   │   │   ├── drawable
+│   │   │   ├── drawable-anydpi
+│   │   │   ├── drawable-hdpi
+│   │   │   ├── drawable-ldrtl
+│   │   │   ├── drawable-mdpi
+│   │   │   ├── drawable-night
+│   │   │   ├── drawable-nodpi
+│   │   │   ├── drawable-xhdpi
+│   │   │   ├── drawable-xxhdpi
+│   │   │   ├── drawable-xxxhdpi
+│   │   │   ├── layout
+│   │   │   ├── raw
+│   │   │   ├── raw-night
+│   │   │   ├── values
+│   │   │   ├── values-af
+│   │   │   ├── values-am
+│   │   │   ├── values-ar
+│   │   │   ├── values-ar-rXB
+│   │   │   ├── values-as
+│   │   │   ├── values-az
+│   │   │   ├── values-be
+│   │   │   ├── values-bg
+│   │   │   ├── values-bn
+│   │   │   ├── values-bs
+│   │   │   ├── values-b+sr+Latn
+│   │   │   ├── values-ca
+│   │   │   ├── values-cs
+│   │   │   ├── values-da
+│   │   │   ├── values-de
+│   │   │   ├── values-el
+│   │   │   ├── values-en-rAU
+│   │   │   ├── values-en-rCA
+│   │   │   ├── values-en-rGB
+│   │   │   ├── values-en-rIN
+│   │   │   ├── values-en-rXA
+│   │   │   ├── values-es
+│   │   │   ├── values-es-rUS
+│   │   │   ├── values-et
+│   │   │   ├── values-eu
+│   │   │   ├── values-fa
+│   │   │   ├── values-fi
+│   │   │   ├── values-fr
+│   │   │   ├── values-fr-rCA
+│   │   │   ├── values-gl
+│   │   │   ├── values-gu
+│   │   │   ├── values-hi
+│   │   │   ├── values-hr
+│   │   │   ├── values-hu
+│   │   │   ├── values-hy
+│   │   │   ├── values-in
+│   │   │   ├── values-is
+│   │   │   ├── values-it
+│   │   │   ├── values-iw
+│   │   │   ├── values-ja
+│   │   │   ├── values-ka
+│   │   │   ├── values-kk
+│   │   │   ├── values-km
+│   │   │   ├── values-kn
+│   │   │   ├── values-ko
+│   │   │   ├── values-ky
+│   │   │   ├── values-land
+│   │   │   ├── values-lo
+│   │   │   ├── values-lt
+│   │   │   ├── values-lv
+│   │   │   ├── values-mk
+│   │   │   ├── values-ml
+│   │   │   ├── values-mn
+│   │   │   ├── values-mr
+│   │   │   ├── values-ms
+│   │   │   ├── values-my
+│   │   │   ├── values-nb
+│   │   │   ├── values-ne
+│   │   │   ├── values-night
+│   │   │   ├── values-nl
+│   │   │   ├── values-or
+│   │   │   ├── values-pa
+│   │   │   ├── values-pl
+│   │   │   ├── values-pt
+│   │   │   ├── values-pt-rBR
+│   │   │   ├── values-pt-rPT
+│   │   │   ├── values-ro
+│   │   │   ├── values-ru
+│   │   │   ├── values-si
+│   │   │   ├── values-sk
+│   │   │   ├── values-sl
+│   │   │   ├── values-sq
+│   │   │   ├── values-sr
+│   │   │   ├── values-sv
+│   │   │   ├── values-sw
+│   │   │   ├── values-sw600dp
+│   │   │   ├── values-sw600dp-land
+│   │   │   ├── values-ta
+│   │   │   ├── values-te
+│   │   │   ├── values-th
+│   │   │   ├── values-tl
+│   │   │   ├── values-tr
+│   │   │   ├── values-uk
+│   │   │   ├── values-ur
+│   │   │   ├── values-uz
+│   │   │   ├── values-vi
+│   │   │   ├── values-zh-rCN
+│   │   │   ├── values-zh-rHK
+│   │   │   ├── values-zh-rTW
+│   │   │   ├── values-zu
+│   │   │   └── xml
+│   │   └── src
+│   │       └── org
+│   │           └── pixelexperience
+│   │               └── settings
+│   │                   └── gestures
+│   │                       └── columbus
+│   └── SystemUIGoogle
+│       ├── assets
+│       ├── columbus
+│       │   └── libs
+│       ├── elmyra
+│       │   └── libs
+│       ├── interfaces
+│       │   └── libs
+│       ├── matchmaker
+│       │   └── libs
+│       ├── nga
+│       │   └── libs
+│       ├── proto
+│       ├── res
+│       │   ├── anim
+│       │   ├── drawable
+│       │   ├── layout
+│       │   ├── menu
+│       │   ├── raw
+│       │   ├── values
+│       │   ├── values-af
+│       │   ├── values-am
+│       │   ├── values-ar
+│       │   ├── values-ar-rXB
+│       │   ├── values-as
+│       │   ├── values-az
+│       │   ├── values-be
+│       │   ├── values-bg
+│       │   ├── values-bn
+│       │   ├── values-bs
+│       │   ├── values-b+sr+Latn
+│       │   ├── values-ca
+│       │   ├── values-cs
+│       │   ├── values-da
+│       │   ├── values-de
+│       │   ├── values-el
+│       │   ├── values-en-rAU
+│       │   ├── values-en-rCA
+│       │   ├── values-en-rGB
+│       │   ├── values-en-rIN
+│       │   ├── values-en-rXA
+│       │   ├── values-es
+│       │   ├── values-es-rUS
+│       │   ├── values-et
+│       │   ├── values-eu
+│       │   ├── values-fa
+│       │   ├── values-fi
+│       │   ├── values-fr
+│       │   ├── values-fr-rCA
+│       │   ├── values-gl
+│       │   ├── values-gu
+│       │   ├── values-hi
+│       │   ├── values-hr
+│       │   ├── values-hu
+│       │   ├── values-hy
+│       │   ├── values-in
+│       │   ├── values-is
+│       │   ├── values-it
+│       │   ├── values-iw
+│       │   ├── values-ja
+│       │   ├── values-ka
+│       │   ├── values-kk
+│       │   ├── values-km
+│       │   ├── values-kn
+│       │   ├── values-ko
+│       │   ├── values-ky
+│       │   ├── values-land
+│       │   ├── values-lo
+│       │   ├── values-lt
+│       │   ├── values-lv
+│       │   ├── values-mk
+│       │   ├── values-ml
+│       │   ├── values-mn
+│       │   ├── values-mr
+│       │   ├── values-ms
+│       │   ├── values-my
+│       │   ├── values-nb
+│       │   ├── values-ne
+│       │   ├── values-nl
+│       │   ├── values-or
+│       │   ├── values-pa
+│       │   ├── values-pl
+│       │   ├── values-pt
+│       │   ├── values-pt-rBR
+│       │   ├── values-pt-rPT
+│       │   ├── values-ro
+│       │   ├── values-ru
+│       │   ├── values-si
+│       │   ├── values-sk
+│       │   ├── values-sl
+│       │   ├── values-sq
+│       │   ├── values-sr
+│       │   ├── values-sv
+│       │   ├── values-sw
+│       │   ├── values-ta
+│       │   ├── values-te
+│       │   ├── values-th
+│       │   ├── values-tl
+│       │   ├── values-tr
+│       │   ├── values-uk
+│       │   ├── values-ur
+│       │   ├── values-uz
+│       │   ├── values-vi
+│       │   ├── values-zh-rCN
+│       │   ├── values-zh-rHK
+│       │   ├── values-zh-rTW
+│       │   ├── values-zu
+│       │   └── xml
+│       ├── src
+│       │   ├── com
+│       │   │   └── google
+│       │   │       └── android
+│       │   │           └── systemui
+│       │   │               ├── ambientmusic
+│       │   │               ├── assist
+│       │   │               │   ├── dagger
+│       │   │               │   └── uihints
+│       │   │               ├── columbus
+│       │   │               │   ├── actions
+│       │   │               │   └── dagger
+│       │   │               ├── controls
+│       │   │               ├── dagger
+│       │   │               ├── dreamliner
+│       │   │               │   └── dagger
+│       │   │               ├── elmyra
+│       │   │               │   ├── dagger
+│       │   │               │   └── feedback
+│       │   │               ├── gesture
+│       │   │               ├── googlebattery
+│       │   │               ├── input
+│       │   │               ├── keyguard
+│       │   │               ├── power
+│       │   │               │   └── dagger
+│       │   │               ├── qs
+│       │   │               │   ├── dagger
+│       │   │               │   ├── tileimpl
+│       │   │               │   └── tiles
+│       │   │               ├── reversecharging
+│       │   │               │   └── dagger
+│       │   │               ├── screenshot
+│       │   │               ├── smartspace
+│       │   │               │   ├── dagger
+│       │   │               │   ├── filters
+│       │   │               │   ├── logging
+│       │   │               │   └── uitemplate
+│       │   │               ├── statusbar
+│       │   │               │   ├── dagger
+│       │   │               │   ├── phone
+│       │   │               │   │   └── dagger
+│       │   │               │   └── policy
+│       │   │               └── theme
+│       │   └── org
+│       │       └── pixelexperience
+│       │           └── systemui
+│       │               └── columbus
+│       └── touchcontext
+│           └── libs
+├── qcom
+│   └── opensource
+│       ├── audio
+│       │   ├── configs
+│       │   │   └── qssi
+│       │   └── policy_hal
+│       ├── audio-hal
+│       │   └── st-hal
+│       │       ├── ext_headers
+│       │       └── st_extn
+│       ├── commonsys
+│       │   ├── display
+│       │   │   ├── config
+│       │   │   ├── gralloc
+│       │   │   ├── libqdmetadata
+│       │   │   └── services
+│       │   │       └── config
+│       │   │           └── src
+│       │   └── dpm
+│       │       └── src
+│       │           └── com
+│       │               └── quicinc
+│       │                   └── tcmiface
+│       ├── commonsys-intf
+│       │   └── display
+│       │       ├── aidl
+│       │       │   └── config
+│       │       │       ├── aidl_api
+│       │       │       │   └── vendor.qti.hardware.display.config
+│       │       │       │       ├── 1
+│       │       │       │       │   └── vendor
+│       │       │       │       │       └── qti
+│       │       │       │       │           └── hardware
+│       │       │       │       │               └── display
+│       │       │       │       │                   └── config
+│       │       │       │       ├── 2
+│       │       │       │       │   └── vendor
+│       │       │       │       │       └── qti
+│       │       │       │       │           └── hardware
+│       │       │       │       │               └── display
+│       │       │       │       │                   └── config
+│       │       │       │       ├── 3
+│       │       │       │       │   └── vendor
+│       │       │       │       │       └── qti
+│       │       │       │       │           └── hardware
+│       │       │       │       │               └── display
+│       │       │       │       │                   └── config
+│       │       │       │       ├── 4
+│       │       │       │       │   └── vendor
+│       │       │       │       │       └── qti
+│       │       │       │       │           └── hardware
+│       │       │       │       │               └── display
+│       │       │       │       │                   └── config
+│       │       │       │       ├── 5
+│       │       │       │       │   └── vendor
+│       │       │       │       │       └── qti
+│       │       │       │       │           └── hardware
+│       │       │       │       │               └── display
+│       │       │       │       │                   └── config
+│       │       │       │       └── current
+│       │       │       │           └── vendor
+│       │       │       │               └── qti
+│       │       │       │                   └── hardware
+│       │       │       │                       └── display
+│       │       │       │                           └── config
+│       │       │       └── vendor
+│       │       │           └── qti
+│       │       │               └── hardware
+│       │       │                   └── display
+│       │       │                       └── config
+│       │       ├── config
+│       │       ├── gralloc
+│       │       ├── include
+│       │       ├── libqdmetadata
+│       │       └── services
+│       │           └── config
+│       ├── core-utils
+│       │   ├── build
+│       │   │   ├── libion_header_paths
+│       │   │   └── tasks
+│       │   ├── dlkm
+│       │   ├── dtbtool
+│       │   ├── hidl
+│       │   ├── image_generation_tool
+│       │   │   └── config
+│       │   ├── meta_image
+│       │   ├── packkernelimg
+│       │   └── vndk
+│       ├── data-ipa-cfg-mgr
+│       │   ├── hal
+│       │   │   ├── inc
+│       │   │   └── src
+│       │   ├── ipacm
+│       │   │   ├── inc
+│       │   │   └── src
+│       │   └── ipanat
+│       │       ├── inc
+│       │       ├── src
+│       │       └── test
+│       ├── data-ipa-cfg-mgr-legacy-um
+│       │   ├── hal
+│       │   │   ├── inc
+│       │   │   └── src
+│       │   ├── ipacm
+│       │   │   ├── inc
+│       │   │   └── src
+│       │   └── ipanat
+│       │       ├── inc
+│       │       ├── src
+│       │       └── test
+│       ├── dataservices
+│       │   ├── datatop
+│       │   │   └── src
+│       │   └── rmnetctl
+│       │       ├── cli
+│       │       ├── inc
+│       │       └── src
+│       ├── display
+│       │   ├── config
+│       │   ├── gralloc
+│       │   ├── libqdmetadata
+│       │   └── services
+│       │       └── config
+│       │           └── src
+│       ├── fm-commonsys
+│       │   ├── fmapp2
+│       │   │   ├── res
+│       │   │   │   ├── anim
+│       │   │   │   ├── drawable
+│       │   │   │   ├── drawable-hdpi
+│       │   │   │   ├── drawable-mdpi
+│       │   │   │   ├── drawable-xhdpi
+│       │   │   │   ├── drawable-xxhdpi
+│       │   │   │   ├── layout
+│       │   │   │   ├── layout-800x480
+│       │   │   │   ├── layout-land-finger
+│       │   │   │   ├── layout-land-finger-800x480
+│       │   │   │   ├── menu
+│       │   │   │   ├── values
+│       │   │   │   ├── values-af
+│       │   │   │   ├── values-ar
+│       │   │   │   ├── values-as
+│       │   │   │   ├── values-ast-rES
+│       │   │   │   ├── values-az
+│       │   │   │   ├── values-be
+│       │   │   │   ├── values-bg
+│       │   │   │   ├── values-bn
+│       │   │   │   ├── values-bs
+│       │   │   │   ├── values-ca
+│       │   │   │   ├── values-cs
+│       │   │   │   ├── values-cy
+│       │   │   │   ├── values-da
+│       │   │   │   ├── values-de
+│       │   │   │   ├── values-el
+│       │   │   │   ├── values-en-rAU
+│       │   │   │   ├── values-en-rCA
+│       │   │   │   ├── values-en-rGB
+│       │   │   │   ├── values-en-rIN
+│       │   │   │   ├── values-eo
+│       │   │   │   ├── values-es
+│       │   │   │   ├── values-es-rMX
+│       │   │   │   ├── values-es-rUS
+│       │   │   │   ├── values-et
+│       │   │   │   ├── values-eu
+│       │   │   │   ├── values-fa
+│       │   │   │   ├── values-fi
+│       │   │   │   ├── values-fr
+│       │   │   │   ├── values-fy-rNL
+│       │   │   │   ├── values-gd
+│       │   │   │   ├── values-gl
+│       │   │   │   ├── values-gu
+│       │   │   │   ├── values-hi
+│       │   │   │   ├── values-hr
+│       │   │   │   ├── values-hu
+│       │   │   │   ├── values-in
+│       │   │   │   ├── values-it
+│       │   │   │   ├── values-iw
+│       │   │   │   ├── values-ja
+│       │   │   │   ├── values-ka
+│       │   │   │   ├── values-kab-rDZ
+│       │   │   │   ├── values-kn
+│       │   │   │   ├── values-ko
+│       │   │   │   ├── values-ku
+│       │   │   │   ├── values-lt
+│       │   │   │   ├── values-lu
+│       │   │   │   ├── values-lv
+│       │   │   │   ├── values-mk
+│       │   │   │   ├── values-ml
+│       │   │   │   ├── values-mr
+│       │   │   │   ├── values-nb
+│       │   │   │   ├── values-nl
+│       │   │   │   ├── values-or
+│       │   │   │   ├── values-pl
+│       │   │   │   ├── values-pt-rBR
+│       │   │   │   ├── values-pt-rPT
+│       │   │   │   ├── values-ro
+│       │   │   │   ├── values-ru
+│       │   │   │   ├── values-sc-rIT
+│       │   │   │   ├── values-si
+│       │   │   │   ├── values-sk
+│       │   │   │   ├── values-sl
+│       │   │   │   ├── values-sq
+│       │   │   │   ├── values-sr
+│       │   │   │   ├── values-sv
+│       │   │   │   ├── values-ta
+│       │   │   │   ├── values-te
+│       │   │   │   ├── values-th
+│       │   │   │   ├── values-tr
+│       │   │   │   ├── values-ug
+│       │   │   │   ├── values-uk
+│       │   │   │   ├── values-vi
+│       │   │   │   ├── values-zh-rCN
+│       │   │   │   ├── values-zh-rHK
+│       │   │   │   └── values-zh-rTW
+│       │   │   └── src
+│       │   │       └── com
+│       │   │           └── caf
+│       │   │               ├── fmradio
+│       │   │               ├── hc_utils
+│       │   │               └── utils
+│       │   ├── fm_hci
+│       │   ├── helium
+│       │   ├── jni
+│       │   └── qcom
+│       │       └── fmradio
+│       ├── healthd-ext
+│       ├── interfaces
+│       │   ├── bluetooth_audio
+│       │   │   ├── 1.0
+│       │   │   ├── 2.0
+│       │   │   ├── 2.1
+│       │   │   └── aidl
+│       │   │       ├── aidl_api
+│       │   │       │   └── vendor.qti.hardware.bluetooth.audio
+│       │   │       │       ├── 1
+│       │   │       │       │   └── vendor
+│       │   │       │       │       └── qti
+│       │   │       │       │           └── hardware
+│       │   │       │       │               └── bluetooth
+│       │   │       │       │                   └── audio
+│       │   │       │       └── current
+│       │   │       │           └── vendor
+│       │   │       │               └── qti
+│       │   │       │                   └── hardware
+│       │   │       │                       └── bluetooth
+│       │   │       │                           └── audio
+│       │   │       └── vendor
+│       │   │           └── qti
+│       │   │               └── hardware
+│       │   │                   └── bluetooth
+│       │   │                       └── audio
+│       │   ├── bluetooth_dun
+│       │   │   └── 1.0
+│       │   ├── btconfigstore
+│       │   │   ├── 1.0
+│       │   │   └── 2.0
+│       │   ├── camera
+│       │   │   ├── aon
+│       │   │   │   ├── 1.0
+│       │   │   │   ├── 1.1
+│       │   │   │   ├── 1.2
+│       │   │   │   └── 1.3
+│       │   │   ├── device
+│       │   │   │   └── 1.0
+│       │   │   └── postproc
+│       │   │       └── 1.0
+│       │   ├── capabilityconfigstore
+│       │   │   └── 1.0
+│       │   ├── cryptfshw
+│       │   │   └── 1.0
+│       │   ├── debugutils
+│       │   │   └── 1.0
+│       │   ├── display
+│       │   │   ├── allocator
+│       │   │   │   ├── 1.0
+│       │   │   │   ├── 3.0
+│       │   │   │   └── 4.0
+│       │   │   ├── composer
+│       │   │   │   ├── 1.0
+│       │   │   │   ├── 2.0
+│       │   │   │   ├── 2.1
+│       │   │   │   ├── 3.0
+│       │   │   │   └── 3.1
+│       │   │   ├── config
+│       │   │   │   ├── 1.0
+│       │   │   │   ├── 1.1
+│       │   │   │   ├── 1.10
+│       │   │   │   ├── 1.11
+│       │   │   │   ├── 1.12
+│       │   │   │   ├── 1.13
+│       │   │   │   ├── 1.14
+│       │   │   │   ├── 1.15
+│       │   │   │   ├── 1.16
+│       │   │   │   ├── 1.17
+│       │   │   │   ├── 1.18
+│       │   │   │   ├── 1.19
+│       │   │   │   ├── 1.2
+│       │   │   │   ├── 1.20
+│       │   │   │   ├── 1.3
+│       │   │   │   ├── 1.4
+│       │   │   │   ├── 1.5
+│       │   │   │   ├── 1.6
+│       │   │   │   ├── 1.7
+│       │   │   │   ├── 1.8
+│       │   │   │   ├── 1.9
+│       │   │   │   └── 2.0
+│       │   │   ├── demura
+│       │   │   │   ├── 1.0
+│       │   │   │   └── 2.0
+│       │   │   ├── mapper
+│       │   │   │   ├── 1.0
+│       │   │   │   ├── 1.1
+│       │   │   │   ├── 2.0
+│       │   │   │   ├── 3.0
+│       │   │   │   └── 4.0
+│       │   │   └── mapperextensions
+│       │   │       ├── 1.0
+│       │   │       ├── 1.1
+│       │   │       ├── 1.2
+│       │   │       └── 1.3
+│       │   ├── fm
+│       │   │   └── 1.0
+│       │   ├── fstman
+│       │   │   └── 1.0
+│       │   ├── perf
+│       │   │   ├── 1.0
+│       │   │   ├── 2.0
+│       │   │   ├── 2.1
+│       │   │   ├── 2.2
+│       │   │   └── 2.3
+│       │   ├── servicetracker
+│       │   │   ├── 1.0
+│       │   │   ├── 1.1
+│       │   │   └── 1.2
+│       │   ├── systemhelper
+│       │   │   └── 1.0
+│       │   └── wifi
+│       │       ├── 1.0
+│       │       ├── hostapd
+│       │       │   ├── 1.0
+│       │       │   ├── 1.1
+│       │       │   ├── 1.2
+│       │       │   └── 1.3
+│       │       └── supplicant
+│       │           ├── 1.0
+│       │           ├── 2.0
+│       │           ├── 2.1
+│       │           ├── 2.2
+│       │           ├── 2.3
+│       │           └── aidl
+│       │               ├── aidl_api
+│       │               │   └── vendor.qti.hardware.wifi.supplicant
+│       │               │       ├── 1
+│       │               │       │   └── vendor
+│       │               │       │       └── qti
+│       │               │       │           └── hardware
+│       │               │       │               └── wifi
+│       │               │       │                   └── supplicant
+│       │               │       └── current
+│       │               │           └── vendor
+│       │               │               └── qti
+│       │               │                   └── hardware
+│       │               │                       └── wifi
+│       │               │                           └── supplicant
+│       │               └── vendor
+│       │                   └── qti
+│       │                       └── hardware
+│       │                           └── wifi
+│       │                               └── supplicant
+│       ├── power
+│       │   └── config
+│       │       ├── anorak
+│       │       ├── atoll
+│       │       ├── bengal
+│       │       ├── holi
+│       │       ├── kalama
+│       │       ├── kona
+│       │       ├── lahaina
+│       │       ├── lito
+│       │       ├── msmnile
+│       │       ├── neo
+│       │       ├── parrot
+│       │       ├── sdm660
+│       │       ├── sm6150
+│       │       ├── taro
+│       │       └── trinket
+│       ├── thermal-engine
+│       ├── usb
+│       │   ├── etc
+│       │   └── hal
+│       ├── vibrator
+│       │   ├── aidl
+│       │   │   └── include
+│       │   └── effect
+│       └── wfd-commonsys
+│           └── libaac
+└── xiaomi
+    └── atom
+        └── proprietary
+            ├── framework
+            ├── lib
+            ├── lib64
+            └── system_ext
+                ├── lib
+                └── lib64
+
+2215 directories

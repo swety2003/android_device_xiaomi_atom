@@ -1,0 +1,1185 @@
+device
+├── custom
+│   └── sepolicy
+│       ├── common
+│       │   ├── dynamic
+│       │   ├── dynamic_extra
+│       │   ├── private
+│       │   ├── public
+│       │   └── vendor
+│       ├── exynos
+│       │   ├── system
+│       │   └── vendor
+│       ├── mediatek
+│       │   ├── dynamic
+│       │   ├── system
+│       │   └── vendor
+│       └── qcom
+│           ├── dynamic
+│           ├── legacy-vendor
+│           ├── private
+│           ├── system
+│           └── vendor
+├── generic
+│   └── vulkan-cereal
+│       ├── base
+│       │   ├── msvc-posix-compat
+│       │   │   ├── include
+│       │   │   │   └── sys
+│       │   │   └── src
+│       │   └── testing
+│       ├── fake-android-guest
+│       │   ├── android
+│       │   ├── androidImpl
+│       │   ├── cutils
+│       │   ├── grallocusage
+│       │   ├── hardware
+│       │   ├── libgrallocusage
+│       │   ├── libvulkan
+│       │   ├── log
+│       │   ├── nativebase
+│       │   ├── pdx
+│       │   ├── sync
+│       │   ├── sys
+│       │   ├── system
+│       │   ├── ui
+│       │   ├── utils
+│       │   └── vndk
+│       ├── host-common
+│       │   ├── avd
+│       │   ├── opengl
+│       │   └── testing
+│       ├── include
+│       │   ├── EGL
+│       │   ├── ETC1
+│       │   ├── GL
+│       │   ├── GLES
+│       │   ├── GLES12Translator
+│       │   ├── GLES2
+│       │   ├── GLES3
+│       │   ├── glm
+│       │   │   ├── detail
+│       │   │   ├── gtc
+│       │   │   ├── gtx
+│       │   │   └── simd
+│       │   ├── KHR
+│       │   └── vulkan
+│       ├── protocols
+│       │   ├── generic-apigen
+│       │   ├── gles1
+│       │   ├── gles2
+│       │   ├── renderControl
+│       │   └── vulkan
+│       │       ├── api
+│       │       │   ├── basetypes
+│       │       │   ├── defines
+│       │       │   ├── enums
+│       │       │   ├── flags
+│       │       │   ├── funcpointers
+│       │       │   ├── handles
+│       │       │   ├── protos
+│       │       │   └── structs
+│       │       ├── appendices
+│       │       │   └── meta
+│       │       ├── chapters
+│       │       │   ├── commonvalidity
+│       │       │   ├── VK_AMD_buffer_marker
+│       │       │   ├── VK_EXT_acquire_drm_display
+│       │       │   ├── VK_EXT_acquire_xlib_display
+│       │       │   ├── VK_EXT_blend_operation_advanced
+│       │       │   ├── VK_EXT_directfb_surface
+│       │       │   ├── VK_EXT_direct_mode_display
+│       │       │   ├── VK_EXT_display_control
+│       │       │   ├── VK_EXT_display_surface_counter
+│       │       │   ├── VK_EXT_headless_surface
+│       │       │   ├── VK_EXT_metal_surface
+│       │       │   ├── VK_EXT_pipeline_creation_feedback
+│       │       │   ├── VK_EXT_validation_cache
+│       │       │   ├── VK_FUCHSIA_external_memory
+│       │       │   ├── VK_FUCHSIA_imagepipe_surface
+│       │       │   ├── VK_GGP_stream_descriptor_surface
+│       │       │   ├── VK_GOOGLE_display_timing
+│       │       │   ├── VK_INTEL_performance_query
+│       │       │   ├── VK_KHR_android_surface
+│       │       │   ├── VK_KHR_deferred_host_operations
+│       │       │   ├── VK_KHR_display
+│       │       │   ├── VK_KHR_display_swapchain
+│       │       │   ├── VK_KHR_incremental_present
+│       │       │   ├── VK_KHR_mir_surface
+│       │       │   ├── VK_KHR_performance_query
+│       │       │   ├── VK_KHR_pipeline_executable_properties
+│       │       │   ├── VK_KHR_present_wait
+│       │       │   ├── VK_KHR_shared_presentable_image
+│       │       │   ├── VK_KHR_surface
+│       │       │   ├── VK_KHR_swapchain
+│       │       │   ├── VK_KHR_wayland_surface
+│       │       │   ├── VK_KHR_win32_surface
+│       │       │   ├── VK_KHR_xcb_surface
+│       │       │   ├── VK_KHR_xlib_surface
+│       │       │   ├── VK_MVK_ios_surface
+│       │       │   ├── VK_MVK_macos_surface
+│       │       │   ├── VK_NN_vi_surface
+│       │       │   ├── VK_NV_acquire_winrt_display
+│       │       │   ├── VK_NV_clip_space_w_scaling
+│       │       │   ├── VK_NV_device_diagnostic_checkpoints
+│       │       │   ├── VK_NV_device_generated_commands
+│       │       │   ├── VK_NV_external_memory
+│       │       │   ├── VK_NV_external_memory_capabilities
+│       │       │   ├── VK_NV_external_memory_win32
+│       │       │   ├── VK_NV_mesh_shader
+│       │       │   ├── VK_NV_win32_keyed_mutex
+│       │       │   ├── VK_NVX_device_generated_commands
+│       │       │   ├── VK_QCOM_rotated_copies
+│       │       │   └── VK_QNX_screen_surface
+│       │       ├── config
+│       │       │   ├── chunkindex
+│       │       │   ├── extension-highlighter
+│       │       │   ├── fonts
+│       │       │   ├── katex_replace
+│       │       │   ├── loadable_html
+│       │       │   ├── spec-macros
+│       │       │   ├── themes
+│       │       │   ├── vulkan-macros
+│       │       │   └── vu-to-json
+│       │       ├── gen
+│       │       │   └── include
+│       │       │       ├── vk_video
+│       │       │       └── vulkan
+│       │       ├── hostsynctable
+│       │       ├── images
+│       │       ├── include
+│       │       │   ├── vk_video
+│       │       │   └── vulkan
+│       │       ├── katex
+│       │       │   ├── contrib
+│       │       │   └── fonts
+│       │       ├── LICENSES
+│       │       ├── man
+│       │       │   └── images
+│       │       │       └── icons
+│       │       ├── out
+│       │       │   └── katex
+│       │       │       ├── contrib
+│       │       │       └── fonts
+│       │       ├── proposals
+│       │       ├── scripts
+│       │       │   ├── asciidoctor-chunker
+│       │       │   ├── ci
+│       │       │   ├── Retired
+│       │       │   └── spec_tools
+│       │       ├── src
+│       │       │   └── ext_loader
+│       │       ├── style
+│       │       ├── tests
+│       │       │   ├── ggp_c
+│       │       │   ├── screen
+│       │       │   ├── X11
+│       │       │   │   └── extensions
+│       │       │   ├── xcb
+│       │       │   └── zircon
+│       │       ├── validity
+│       │       │   ├── protos
+│       │       │   └── structs
+│       │       └── xml
+│       │           ├── cereal
+│       │           │   └── common
+│       │           ├── ci
+│       │           ├── htmldiff
+│       │           ├── Retired
+│       │           └── spec_tools
+│       ├── scripts
+│       │   ├── gles3translatorgen
+│       │   └── print_gfx_logs
+│       ├── snapshot
+│       ├── stream-servers
+│       │   ├── apigen-codec-common
+│       │   │   ├── GL
+│       │   │   │   └── internal
+│       │   │   └── X11
+│       │   │       └── extensions
+│       │   ├── compressedTextureFormats
+│       │   ├── gles1_dec
+│       │   ├── gles2_dec
+│       │   ├── glestranslator
+│       │   │   ├── EGL
+│       │   │   ├── GLcommon
+│       │   │   ├── GLES_CM
+│       │   │   ├── GLES_V2
+│       │   │   └── include
+│       │   │       └── GLcommon
+│       │   ├── libGLSnapshot
+│       │   ├── OpenGLESDispatch
+│       │   ├── renderControl_dec
+│       │   ├── testlibs
+│       │   │   ├── osx
+│       │   │   ├── windows
+│       │   │   │   └── win32
+│       │   │   └── x11
+│       │   ├── tests
+│       │   └── vulkan
+│       │       └── cereal
+│       │           ├── common
+│       │           └── proto
+│       ├── testenvs
+│       └── third-party
+│           ├── angle
+│           │   ├── android
+│           │   ├── build_overrides
+│           │   ├── doc
+│           │   │   └── img
+│           │   ├── extensions
+│           │   ├── gni
+│           │   ├── include
+│           │   │   ├── EGL
+│           │   │   ├── GLES
+│           │   │   ├── GLES2
+│           │   │   ├── GLES3
+│           │   │   ├── GLSLANG
+│           │   │   ├── KHR
+│           │   │   ├── platform
+│           │   │   ├── vulkan
+│           │   │   └── WGL
+│           │   ├── infra
+│           │   │   └── config
+│           │   │       ├── branch
+│           │   │       └── global
+│           │   ├── samples
+│           │   │   ├── capture_replay
+│           │   │   ├── gles1
+│           │   │   ├── hello_triangle
+│           │   │   ├── mip_map_2d
+│           │   │   ├── multiple_draw_buffers
+│           │   │   ├── multi_texture
+│           │   │   ├── multiview
+│           │   │   ├── multi_window
+│           │   │   ├── particle_system
+│           │   │   ├── post_sub_buffer
+│           │   │   ├── sample_util
+│           │   │   ├── shader_translator
+│           │   │   ├── simple_instancing
+│           │   │   ├── simple_texture_2d
+│           │   │   ├── simple_texture_cubemap
+│           │   │   ├── simple_vertex_shader
+│           │   │   ├── stencil_operations
+│           │   │   ├── tex_redef_microbench
+│           │   │   ├── texture_wrap
+│           │   │   ├── tri_fan_microbench
+│           │   │   └── WindowTest
+│           │   ├── scripts
+│           │   │   └── code_generation_hashes
+│           │   ├── src
+│           │   │   ├── android_system_settings
+│           │   │   │   ├── assets
+│           │   │   │   ├── res
+│           │   │   │   │   ├── drawable
+│           │   │   │   │   ├── layout
+│           │   │   │   │   ├── values
+│           │   │   │   │   ├── values-af
+│           │   │   │   │   ├── values-am
+│           │   │   │   │   ├── values-ar
+│           │   │   │   │   ├── values-as
+│           │   │   │   │   ├── values-az
+│           │   │   │   │   ├── values-be
+│           │   │   │   │   ├── values-bg
+│           │   │   │   │   ├── values-bn
+│           │   │   │   │   ├── values-bs
+│           │   │   │   │   ├── values-b+sr+Latn
+│           │   │   │   │   ├── values-ca
+│           │   │   │   │   ├── values-cs
+│           │   │   │   │   ├── values-da
+│           │   │   │   │   ├── values-de
+│           │   │   │   │   ├── values-el
+│           │   │   │   │   ├── values-en-rAU
+│           │   │   │   │   ├── values-en-rCA
+│           │   │   │   │   ├── values-en-rGB
+│           │   │   │   │   ├── values-en-rIN
+│           │   │   │   │   ├── values-en-rXC
+│           │   │   │   │   ├── values-es
+│           │   │   │   │   ├── values-es-rUS
+│           │   │   │   │   ├── values-et
+│           │   │   │   │   ├── values-eu
+│           │   │   │   │   ├── values-fa
+│           │   │   │   │   ├── values-fi
+│           │   │   │   │   ├── values-fr
+│           │   │   │   │   ├── values-fr-rCA
+│           │   │   │   │   ├── values-gl
+│           │   │   │   │   ├── values-gu
+│           │   │   │   │   ├── values-hi
+│           │   │   │   │   ├── values-hr
+│           │   │   │   │   ├── values-hu
+│           │   │   │   │   ├── values-hy
+│           │   │   │   │   ├── values-in
+│           │   │   │   │   ├── values-is
+│           │   │   │   │   ├── values-it
+│           │   │   │   │   ├── values-iw
+│           │   │   │   │   ├── values-ja
+│           │   │   │   │   ├── values-ka
+│           │   │   │   │   ├── values-kk
+│           │   │   │   │   ├── values-km
+│           │   │   │   │   ├── values-kn
+│           │   │   │   │   ├── values-ko
+│           │   │   │   │   ├── values-ky
+│           │   │   │   │   ├── values-lo
+│           │   │   │   │   ├── values-lt
+│           │   │   │   │   ├── values-lv
+│           │   │   │   │   ├── values-mk
+│           │   │   │   │   ├── values-ml
+│           │   │   │   │   ├── values-mn
+│           │   │   │   │   ├── values-mr
+│           │   │   │   │   ├── values-ms
+│           │   │   │   │   ├── values-my
+│           │   │   │   │   ├── values-nb
+│           │   │   │   │   ├── values-ne
+│           │   │   │   │   ├── values-nl
+│           │   │   │   │   ├── values-or
+│           │   │   │   │   ├── values-pa
+│           │   │   │   │   ├── values-pl
+│           │   │   │   │   ├── values-pt
+│           │   │   │   │   ├── values-pt-rPT
+│           │   │   │   │   ├── values-ro
+│           │   │   │   │   ├── values-ru
+│           │   │   │   │   ├── values-si
+│           │   │   │   │   ├── values-sk
+│           │   │   │   │   ├── values-sl
+│           │   │   │   │   ├── values-sq
+│           │   │   │   │   ├── values-sr
+│           │   │   │   │   ├── values-sv
+│           │   │   │   │   ├── values-sw
+│           │   │   │   │   ├── values-ta
+│           │   │   │   │   ├── values-te
+│           │   │   │   │   ├── values-th
+│           │   │   │   │   ├── values-tl
+│           │   │   │   │   ├── values-tr
+│           │   │   │   │   ├── values-uk
+│           │   │   │   │   ├── values-ur
+│           │   │   │   │   ├── values-uz
+│           │   │   │   │   ├── values-v17
+│           │   │   │   │   ├── values-vi
+│           │   │   │   │   ├── values-zh-rCN
+│           │   │   │   │   ├── values-zh-rHK
+│           │   │   │   │   ├── values-zh-rTW
+│           │   │   │   │   ├── values-zu
+│           │   │   │   │   └── xml
+│           │   │   │   └── src
+│           │   │   │       └── com
+│           │   │   │           └── android
+│           │   │   │               └── angle
+│           │   │   │                   └── common
+│           │   │   ├── common
+│           │   │   │   ├── fuchsia_egl
+│           │   │   │   ├── third_party
+│           │   │   │   │   ├── base
+│           │   │   │   │   │   └── anglebase
+│           │   │   │   │   │       ├── containers
+│           │   │   │   │   │       └── numerics
+│           │   │   │   │   ├── smhasher
+│           │   │   │   │   │   └── src
+│           │   │   │   │   └── xxhash
+│           │   │   │   └── vulkan
+│           │   │   ├── compiler
+│           │   │   │   ├── fuzz
+│           │   │   │   ├── preprocessor
+│           │   │   │   └── translator
+│           │   │   │       ├── tree_ops
+│           │   │   │       └── tree_util
+│           │   │   ├── feature_support_util
+│           │   │   ├── gpu_info_util
+│           │   │   ├── image_util
+│           │   │   ├── libANGLE
+│           │   │   │   ├── overlay
+│           │   │   │   └── renderer
+│           │   │   │       ├── d3d
+│           │   │   │       │   ├── d3d11
+│           │   │   │       │   │   ├── converged
+│           │   │   │       │   │   ├── shaders
+│           │   │   │       │   │   │   └── compiled
+│           │   │   │       │   │   ├── win32
+│           │   │   │       │   │   └── winrt
+│           │   │   │       │   └── d3d9
+│           │   │   │       │       └── shaders
+│           │   │   │       │           └── compiled
+│           │   │   │       ├── gl
+│           │   │   │       │   ├── cgl
+│           │   │   │       │   ├── eagl
+│           │   │   │       │   ├── egl
+│           │   │   │       │   │   ├── android
+│           │   │   │       │   │   └── gbm
+│           │   │   │       │   ├── glx
+│           │   │   │       │   └── wgl
+│           │   │   │       ├── metal
+│           │   │   │       │   ├── doc
+│           │   │   │       │   └── shaders
+│           │   │   │       │       └── compiled
+│           │   │   │       ├── null
+│           │   │   │       └── vulkan
+│           │   │   │           ├── android
+│           │   │   │           ├── doc
+│           │   │   │           │   └── img
+│           │   │   │           ├── fuchsia
+│           │   │   │           ├── ggp
+│           │   │   │           ├── mac
+│           │   │   │           ├── shaders
+│           │   │   │           │   ├── gen
+│           │   │   │           │   └── src
+│           │   │   │           ├── win32
+│           │   │   │           └── xcb
+│           │   │   ├── libEGL
+│           │   │   ├── libGL
+│           │   │   ├── libGLESv1_CM
+│           │   │   ├── libGLESv2
+│           │   │   ├── libShaderTranslator
+│           │   │   ├── tests
+│           │   │   │   ├── compiler_tests
+│           │   │   │   ├── deqp_support
+│           │   │   │   ├── egl_tests
+│           │   │   │   │   └── media
+│           │   │   │   ├── gles1_conformance_tests
+│           │   │   │   ├── gles_conformance_tests
+│           │   │   │   ├── gl_tests
+│           │   │   │   │   ├── gles1
+│           │   │   │   │   └── media
+│           │   │   │   ├── perf_tests
+│           │   │   │   │   ├── restricted_traces
+│           │   │   │   │   └── third_party
+│           │   │   │   │       └── perf
+│           │   │   │   ├── preprocessor_tests
+│           │   │   │   ├── test_expectations
+│           │   │   │   ├── test_utils
+│           │   │   │   │   ├── runner
+│           │   │   │   │   └── third_party
+│           │   │   │   └── util_tests
+│           │   │   └── third_party
+│           │   │       ├── compiler
+│           │   │       ├── khronos
+│           │   │       │   └── GL
+│           │   │       ├── libXNVCtrl
+│           │   │       ├── systeminfo
+│           │   │       ├── trace_event
+│           │   │       └── volk
+│           │   ├── third_party
+│           │   │   ├── glmark2
+│           │   │   ├── glslang
+│           │   │   ├── libpng
+│           │   │   ├── minigbm
+│           │   │   ├── rapidjson
+│           │   │   ├── spirv-cross
+│           │   │   ├── spirv-headers
+│           │   │   ├── spirv-tools
+│           │   │   ├── VK-GL-CTS
+│           │   │   ├── vulkan-headers
+│           │   │   ├── vulkan-loader
+│           │   │   ├── vulkan-tools
+│           │   │   └── vulkan-validation-layers
+│           │   ├── tools
+│           │   │   ├── flex-bison
+│           │   │   │   ├── linux
+│           │   │   │   ├── third_party
+│           │   │   │   │   ├── m4sugar
+│           │   │   │   │   └── skeletons
+│           │   │   │   └── windows
+│           │   │   └── glslang
+│           │   └── util
+│           │       ├── android
+│           │       │   └── third_party
+│           │       ├── fuchsia
+│           │       ├── osx
+│           │       ├── ozone
+│           │       ├── posix
+│           │       ├── windows
+│           │       │   ├── third_party
+│           │       │   │   └── StackWalker
+│           │       │   │       └── src
+│           │       │   └── win32
+│           │       └── x11
+│           ├── astc-codec
+│           │   ├── include
+│           │   │   └── astc-codec
+│           │   ├── src
+│           │   │   ├── base
+│           │   │   │   └── test
+│           │   │   └── decoder
+│           │   │       ├── test
+│           │   │       ├── testdata
+│           │   │       └── tools
+│           │   ├── third_party
+│           │   └── tools
+│           ├── googletest
+│           │   ├── ci
+│           │   ├── docs
+│           │   │   ├── assets
+│           │   │   │   └── css
+│           │   │   ├── _data
+│           │   │   ├── _layouts
+│           │   │   ├── reference
+│           │   │   └── _sass
+│           │   ├── googlemock
+│           │   │   ├── cmake
+│           │   │   ├── docs
+│           │   │   ├── include
+│           │   │   │   └── gmock
+│           │   │   │       └── internal
+│           │   │   │           └── custom
+│           │   │   ├── src
+│           │   │   └── test
+│           │   └── googletest
+│           │       ├── cmake
+│           │       ├── docs
+│           │       ├── include
+│           │       │   └── gtest
+│           │       │       └── internal
+│           │       │           └── custom
+│           │       ├── samples
+│           │       ├── src
+│           │       └── test
+│           ├── lz4
+│           ├── perfetto
+│           │   ├── include
+│           │   │   └── perfetto
+│           │   │       ├── base
+│           │   │       │   └── build_configs
+│           │   │       │       ├── android_tree
+│           │   │       │       └── bazel
+│           │   │       ├── ext
+│           │   │       │   └── base
+│           │   │       └── protozero
+│           │   └── src
+│           │       ├── base
+│           │       └── protozero
+│           ├── perfetto-tracing-only
+│           │   └── proto
+│           └── renderdoc
+│               └── include
+├── google
+│   ├── contexthub
+│   │   ├── contexthubhal
+│   │   │   └── test
+│   │   ├── firmware
+│   │   │   ├── app
+│   │   │   │   ├── chre
+│   │   │   │   │   ├── chre_test0.app
+│   │   │   │   │   ├── chre_test1.app
+│   │   │   │   │   ├── chre_test2.app
+│   │   │   │   │   └── common
+│   │   │   │   ├── test0.app
+│   │   │   │   └── test1.app
+│   │   │   ├── build
+│   │   │   ├── chre
+│   │   │   │   └── platform
+│   │   │   ├── external
+│   │   │   │   ├── arm
+│   │   │   │   └── freebsd
+│   │   │   │       ├── inc
+│   │   │   │       │   └── sys
+│   │   │   │       └── lib
+│   │   │   │           └── msun
+│   │   │   │               └── src
+│   │   │   ├── lib
+│   │   │   │   ├── builtins
+│   │   │   │   ├── libc
+│   │   │   │   └── libm
+│   │   │   ├── os
+│   │   │   │   ├── algos
+│   │   │   │   │   ├── calibration
+│   │   │   │   │   │   ├── accelerometer
+│   │   │   │   │   │   ├── diversity_checker
+│   │   │   │   │   │   ├── gyroscope
+│   │   │   │   │   │   ├── magnetometer
+│   │   │   │   │   │   │   ├── mag_cal
+│   │   │   │   │   │   │   └── mag_sphere_fit_cal
+│   │   │   │   │   │   ├── nano_calibration
+│   │   │   │   │   │   ├── online_calibration
+│   │   │   │   │   │   │   ├── accelerometer
+│   │   │   │   │   │   │   │   └── accel_offset_cal
+│   │   │   │   │   │   │   ├── common_data
+│   │   │   │   │   │   │   ├── gyroscope
+│   │   │   │   │   │   │   │   └── gyro_offset_over_temp_cal
+│   │   │   │   │   │   │   └── magnetometer
+│   │   │   │   │   │   │       └── mag_diverse_cal
+│   │   │   │   │   │   ├── over_temp
+│   │   │   │   │   │   ├── sample_rate_estimator
+│   │   │   │   │   │   ├── sphere_fit
+│   │   │   │   │   │   └── util
+│   │   │   │   │   ├── common
+│   │   │   │   │   │   └── math
+│   │   │   │   │   └── util
+│   │   │   │   ├── core
+│   │   │   │   ├── cpu
+│   │   │   │   │   ├── cortexm4
+│   │   │   │   │   │   └── inc
+│   │   │   │   │   │       └── cpu
+│   │   │   │   │   │           └── cmsis
+│   │   │   │   │   └── x86
+│   │   │   │   │       └── inc
+│   │   │   │   │           └── cpu
+│   │   │   │   ├── drivers
+│   │   │   │   │   ├── ams_tmd2772
+│   │   │   │   │   ├── ams_tmd4903
+│   │   │   │   │   ├── bosch_bmi160
+│   │   │   │   │   ├── bosch_bmp280
+│   │   │   │   │   ├── hall
+│   │   │   │   │   ├── hall_twopole
+│   │   │   │   │   ├── intersil_isl29034
+│   │   │   │   │   ├── invensense_icm40600
+│   │   │   │   │   ├── leds
+│   │   │   │   │   ├── orientation
+│   │   │   │   │   ├── rohm_rpr0521
+│   │   │   │   │   ├── si_si7034
+│   │   │   │   │   ├── st_acc44
+│   │   │   │   │   ├── st_hts221
+│   │   │   │   │   ├── st_lps22hb
+│   │   │   │   │   ├── st_lsm6dsm
+│   │   │   │   │   ├── st_mag40
+│   │   │   │   │   ├── synaptics_s3708
+│   │   │   │   │   ├── tilt_detection
+│   │   │   │   │   ├── vsync
+│   │   │   │   │   └── window_orientation
+│   │   │   │   ├── inc
+│   │   │   │   │   └── algos
+│   │   │   │   └── platform
+│   │   │   │       ├── native
+│   │   │   │       │   ├── inc
+│   │   │   │       │   │   └── plat
+│   │   │   │       │   └── lkr
+│   │   │   │       └── stm32
+│   │   │   │           ├── flash_script
+│   │   │   │           ├── inc
+│   │   │   │           │   └── plat
+│   │   │   │           ├── lkr
+│   │   │   │           └── misc
+│   │   │   └── variant
+│   │   │       ├── argonkey
+│   │   │       │   ├── inc
+│   │   │       │   │   └── variant
+│   │   │       │   └── src
+│   │   │       │       └── os
+│   │   │       ├── linux
+│   │   │       │   └── inc
+│   │   │       │       └── variant
+│   │   │       ├── lunchbox
+│   │   │       │   ├── inc
+│   │   │       │   │   └── variant
+│   │   │       │   └── src
+│   │   │       │       └── os
+│   │   │       ├── neonkey
+│   │   │       │   ├── inc
+│   │   │       │   │   └── variant
+│   │   │       │   └── src
+│   │   │       │       └── os
+│   │   │       └── nucleo
+│   │   │           ├── inc
+│   │   │           │   └── variant
+│   │   │           └── src
+│   │   │               └── os
+│   │   ├── lefty
+│   │   ├── lib
+│   │   │   ├── include
+│   │   │   │   └── nanohub
+│   │   │   └── nanohub
+│   │   ├── sensorhal
+│   │   └── util
+│   │       ├── common
+│   │       ├── nanoapp_cmd
+│   │       ├── nanoapp_encr
+│   │       ├── nanoapp_postprocess
+│   │       ├── nanoapp_sign
+│   │       ├── nanotool
+│   │       ├── sensortest
+│   │       └── stm32_flash
+│   ├── cuttlefish
+│   │   ├── build
+│   │   ├── common
+│   │   │   ├── frontend
+│   │   │   │   └── socket_vsock_proxy
+│   │   │   └── libs
+│   │   │       ├── concurrency
+│   │   │       ├── confui
+│   │   │       ├── device_config
+│   │   │       ├── fs
+│   │   │       ├── net
+│   │   │       ├── security
+│   │   │       └── utils
+│   │   ├── guest
+│   │   │   ├── commands
+│   │   │   │   ├── bt_vhci_forwarder
+│   │   │   │   ├── dlkm_loader
+│   │   │   │   ├── rename_netiface
+│   │   │   │   ├── sensor_injection
+│   │   │   │   ├── setup_wifi
+│   │   │   │   └── vsoc_input_service
+│   │   │   ├── hals
+│   │   │   │   ├── bt
+│   │   │   │   │   ├── data
+│   │   │   │   │   └── remote
+│   │   │   │   ├── camera
+│   │   │   │   ├── confirmationui
+│   │   │   │   │   └── include
+│   │   │   │   ├── gatekeeper
+│   │   │   │   │   └── remote
+│   │   │   │   ├── health
+│   │   │   │   │   └── storage
+│   │   │   │   ├── hostapd
+│   │   │   │   ├── identity
+│   │   │   │   │   ├── common
+│   │   │   │   │   └── libeic
+│   │   │   │   ├── keymaster
+│   │   │   │   │   └── remote
+│   │   │   │   ├── keymint
+│   │   │   │   │   └── remote
+│   │   │   │   ├── nfc
+│   │   │   │   │   └── conf
+│   │   │   │   ├── ril
+│   │   │   │   │   ├── reference-libril
+│   │   │   │   │   └── reference-ril
+│   │   │   │   ├── rild
+│   │   │   │   └── wpa_supplicant
+│   │   │   ├── libs
+│   │   │   │   └── wpa_supplicant_8_lib
+│   │   │   ├── monitoring
+│   │   │   │   ├── cuttlefish_service
+│   │   │   │   │   ├── java
+│   │   │   │   │   │   └── com
+│   │   │   │   │   │       └── android
+│   │   │   │   │   │           └── google
+│   │   │   │   │   │               └── gce
+│   │   │   │   │   │                   └── gceservice
+│   │   │   │   │   └── res
+│   │   │   │   │       └── values
+│   │   │   │   └── tombstone_transmit
+│   │   │   └── services
+│   │   │       ├── suspend_blocker
+│   │   │       └── wifi
+│   │   ├── host
+│   │   │   ├── commands
+│   │   │   │   ├── append_squashfs_overlay
+│   │   │   │   │   └── src
+│   │   │   │   ├── assemble_cvd
+│   │   │   │   ├── bt_connector
+│   │   │   │   ├── config_server
+│   │   │   │   ├── console_forwarder
+│   │   │   │   ├── cvd
+│   │   │   │   │   └── proto
+│   │   │   │   ├── cvd_send_sms
+│   │   │   │   │   └── unittest
+│   │   │   │   ├── fetcher
+│   │   │   │   ├── gnss_grpc_proxy
+│   │   │   │   ├── health
+│   │   │   │   ├── host_bugreport
+│   │   │   │   ├── kernel_log_monitor
+│   │   │   │   ├── logcat_receiver
+│   │   │   │   ├── log_tee
+│   │   │   │   ├── metrics
+│   │   │   │   │   └── proto
+│   │   │   │   ├── mkenvimage_slim
+│   │   │   │   ├── modem_simulator
+│   │   │   │   │   ├── files
+│   │   │   │   │   └── unittest
+│   │   │   │   ├── powerwash_cvd
+│   │   │   │   ├── restart_cvd
+│   │   │   │   ├── run_cvd
+│   │   │   │   ├── secure_env
+│   │   │   │   ├── start
+│   │   │   │   ├── status
+│   │   │   │   ├── stop
+│   │   │   │   ├── test_gce_driver
+│   │   │   │   ├── tombstone_receiver
+│   │   │   │   └── wmediumd_control
+│   │   │   ├── example_custom_actions
+│   │   │   ├── frontend
+│   │   │   │   ├── adb_connector
+│   │   │   │   ├── operator_proxy
+│   │   │   │   ├── webrtc
+│   │   │   │   │   ├── client
+│   │   │   │   │   │   └── js
+│   │   │   │   │   └── lib
+│   │   │   │   └── webrtc_operator
+│   │   │   │       ├── assets
+│   │   │   │       │   └── js
+│   │   │   │       ├── certs
+│   │   │   │       └── constants
+│   │   │   └── libs
+│   │   │       ├── allocd
+│   │   │       │   └── test
+│   │   │       ├── audio_connector
+│   │   │       ├── config
+│   │   │       │   └── adb
+│   │   │       ├── confui
+│   │   │       │   └── layouts
+│   │   │       ├── graphics_detector
+│   │   │       │   └── include
+│   │   │       │       ├── EGL
+│   │   │       │       └── KHR
+│   │   │       ├── image_aggregator
+│   │   │       ├── msg_queue
+│   │   │       ├── screen_connector
+│   │   │       ├── vm_manager
+│   │   │       ├── wayland
+│   │   │       ├── web
+│   │   │       ├── websocket
+│   │   │       └── wmediumd_controller
+│   │   ├── recovery
+│   │   ├── shared
+│   │   │   ├── auto
+│   │   │   │   ├── evs
+│   │   │   │   ├── overlay
+│   │   │   │   │   └── frameworks
+│   │   │   │   │       └── base
+│   │   │   │   │           └── core
+│   │   │   │   │               └── res
+│   │   │   │   │                   └── res
+│   │   │   │   │                       └── values
+│   │   │   │   ├── rro_overlay
+│   │   │   │   │   └── CarServiceOverlay
+│   │   │   │   │       └── res
+│   │   │   │   │           ├── values
+│   │   │   │   │           └── xml
+│   │   │   │   └── sepolicy
+│   │   │   │       ├── audio
+│   │   │   │       ├── evs
+│   │   │   │       ├── vendor
+│   │   │   │       └── vhal
+│   │   │   ├── config
+│   │   │   │   └── input
+│   │   │   ├── foldable
+│   │   │   │   └── overlay
+│   │   │   │       └── frameworks
+│   │   │   │           └── base
+│   │   │   │               └── core
+│   │   │   │                   └── res
+│   │   │   │                       └── res
+│   │   │   │                           └── values
+│   │   │   ├── go
+│   │   │   │   └── overlays
+│   │   │   │       └── core
+│   │   │   │           └── res
+│   │   │   │               └── values
+│   │   │   ├── overlays
+│   │   │   │   ├── connectivity
+│   │   │   │   │   └── res
+│   │   │   │   │       └── values
+│   │   │   │   ├── core
+│   │   │   │   │   └── res
+│   │   │   │   │       └── xml
+│   │   │   │   └── SettingsProvider
+│   │   │   │       └── res
+│   │   │   │           └── values
+│   │   │   ├── pc
+│   │   │   │   └── overlay
+│   │   │   │       └── frameworks
+│   │   │   │           └── base
+│   │   │   │               └── core
+│   │   │   │                   └── res
+│   │   │   │                       └── res
+│   │   │   │                           └── values
+│   │   │   ├── permissions
+│   │   │   ├── phone
+│   │   │   │   └── overlays
+│   │   │   │       ├── core
+│   │   │   │       │   └── res
+│   │   │   │       │       └── values
+│   │   │   │       ├── CuttlefishTetheringOverlay
+│   │   │   │       │   └── res
+│   │   │   │       │       └── values
+│   │   │   │       └── CuttlefishWifiOverlay
+│   │   │   │           └── res
+│   │   │   │               └── values
+│   │   │   ├── sepolicy
+│   │   │   │   ├── product
+│   │   │   │   │   └── private
+│   │   │   │   ├── system_ext
+│   │   │   │   │   └── private
+│   │   │   │   └── vendor
+│   │   │   │       └── google
+│   │   │   ├── slim
+│   │   │   ├── tv
+│   │   │   │   ├── overlay
+│   │   │   │   │   └── frameworks
+│   │   │   │   │       └── base
+│   │   │   │   │           └── core
+│   │   │   │   │               └── res
+│   │   │   │   │                   └── res
+│   │   │   │   │                       └── values
+│   │   │   │   └── sepolicy
+│   │   │   │       └── vendor
+│   │   │   └── wear
+│   │   │       └── overlays
+│   │   │           ├── core
+│   │   │           │   └── res
+│   │   │           │       └── values
+│   │   │           └── SettingsProvider
+│   │   │               └── res
+│   │   │                   └── values
+│   │   ├── tests
+│   │   │   ├── graphics
+│   │   │   │   └── src
+│   │   │   │       └── com
+│   │   │   │           └── android
+│   │   │   │               └── cuttlefish
+│   │   │   │                   └── tests
+│   │   │   ├── hal
+│   │   │   ├── integration
+│   │   │   │   └── com
+│   │   │   │       └── android
+│   │   │   │           └── cuttlefish
+│   │   │   │               └── test
+│   │   │   ├── powerwash
+│   │   │   │   └── src
+│   │   │   │       └── com
+│   │   │   │           └── android
+│   │   │   │               └── cuttlefish
+│   │   │   │                   └── tests
+│   │   │   ├── recovery
+│   │   │   │   └── src
+│   │   │   │       └── com
+│   │   │   │           └── android
+│   │   │   │               └── cuttlefish
+│   │   │   │                   └── tests
+│   │   │   ├── ril
+│   │   │   │   └── src
+│   │   │   │       └── com
+│   │   │   │           └── android
+│   │   │   │               └── cuttlefish
+│   │   │   │                   └── ril
+│   │   │   │                       └── tests
+│   │   │   ├── src
+│   │   │   │   └── com
+│   │   │   │       └── android
+│   │   │   │           └── tests
+│   │   │   │               └── tombstoneTransmit
+│   │   │   └── wifi
+│   │   │       └── src
+│   │   │           └── com
+│   │   │               └── android
+│   │   │                   └── cuttlefish
+│   │   │                       └── wifi
+│   │   │                           └── tests
+│   │   ├── tools
+│   │   ├── vsoc_arm64
+│   │   │   └── phone
+│   │   ├── vsoc_arm64_only
+│   │   │   ├── auto
+│   │   │   ├── phone
+│   │   │   └── slim
+│   │   ├── vsoc_arm_only
+│   │   │   └── phone
+│   │   ├── vsoc_x86
+│   │   │   ├── auto
+│   │   │   ├── go
+│   │   │   ├── pasan
+│   │   │   ├── phone
+│   │   │   ├── tv
+│   │   │   └── wear
+│   │   ├── vsoc_x86_64
+│   │   │   ├── auto
+│   │   │   ├── pc
+│   │   │   ├── phone
+│   │   │   └── tv
+│   │   ├── vsoc_x86_64_only
+│   │   │   ├── phone
+│   │   │   └── slim
+│   │   └── vsoc_x86_only
+│   │       └── phone
+│   └── cuttlefish_prebuilts
+│       ├── bootloader
+│       │   ├── crosvm_aarch64
+│       │   ├── crosvm_locked_aarch64
+│       │   ├── crosvm_locked_x86_64
+│       │   ├── crosvm_x86_64
+│       │   ├── qemu_aarch64
+│       │   ├── qemu_arm
+│       │   └── qemu_x86_64
+│       ├── kernel
+│       │   ├── 5.10-i686
+│       │   ├── 5.15-i686
+│       │   ├── 5.4-i686
+│       │   ├── mainline-arm
+│       │   └── mainline-i686
+│       ├── scripts
+│       ├── uboot_bin
+│       └── uboot_tools
+├── mediatek
+│   ├── bluetooth
+│   │   ├── btremoted
+│   │   ├── interface
+│   │   └── libbt-vendor
+│   │       └── include
+│   └── sepolicy_vndr
+│       ├── basic
+│       │   ├── non_plat
+│       │   ├── plat_private
+│       │   │   └── compat
+│       │   │       ├── 30.0
+│       │   │       └── 31.0
+│       │   └── plat_public
+│       ├── bsp
+│       │   ├── non_plat
+│       │   ├── ota_upgrade
+│       │   ├── plat_private
+│       │   └── plat_public
+│       └── modem
+├── qcom
+│   ├── sepolicy
+│   │   ├── generic
+│   │   │   ├── prebuilts
+│   │   │   │   └── api
+│   │   │   │       ├── 30.0
+│   │   │   │       │   ├── private
+│   │   │   │       │   │   └── compat
+│   │   │   │       │   │       └── 30.0
+│   │   │   │       │   └── public
+│   │   │   │       └── 31.0
+│   │   │   │           ├── private
+│   │   │   │           │   └── compat
+│   │   │   │           │       └── 31.0
+│   │   │   │           └── public
+│   │   │   ├── private
+│   │   │   │   └── compat
+│   │   │   │       ├── 26.0
+│   │   │   │       ├── 27.0
+│   │   │   │       ├── 28.0
+│   │   │   │       ├── 29.0
+│   │   │   │       ├── 30.0
+│   │   │   │       └── 31.0
+│   │   │   ├── product
+│   │   │   │   ├── prebuilts
+│   │   │   │   │   └── api
+│   │   │   │   │       ├── 30.0
+│   │   │   │   │       │   ├── private
+│   │   │   │   │       │   │   └── compat
+│   │   │   │   │       │   │       └── 30.0
+│   │   │   │   │       │   └── public
+│   │   │   │   │       └── 31.0
+│   │   │   │   │           ├── private
+│   │   │   │   │           └── public
+│   │   │   │   ├── private
+│   │   │   │   │   └── compat
+│   │   │   │   │       ├── 26.0
+│   │   │   │   │       ├── 27.0
+│   │   │   │   │       ├── 28.0
+│   │   │   │   │       ├── 29.0
+│   │   │   │   │       ├── 30.0
+│   │   │   │   │       └── 31.0
+│   │   │   │   └── public
+│   │   │   └── public
+│   │   └── prebuilts
+│   │       └── api
+│   │           ├── 30.0
+│   │           └── 31.0
+│   ├── sepolicy-legacy-um
+│   │   ├── generic
+│   │   │   ├── private
+│   │   │   ├── product
+│   │   │   │   ├── private
+│   │   │   │   └── public
+│   │   │   ├── public
+│   │   │   │   └── attribute
+│   │   │   └── vendor
+│   │   │       └── common
+│   │   ├── legacy
+│   │   │   └── vendor
+│   │   │       ├── common
+│   │   │       │   └── sysmonapp
+│   │   │       ├── msm8937
+│   │   │       ├── msm8953
+│   │   │       ├── msm8996
+│   │   │       ├── msm8998
+│   │   │       ├── sdm660
+│   │   │       ├── ssg
+│   │   │       └── test
+│   │   └── qva
+│   │       ├── private
+│   │       ├── product
+│   │       │   ├── private
+│   │       │   └── public
+│   │       └── public
+│   │           └── attribute
+│   ├── sepolicy_vndr
+│   │   ├── generic
+│   │   │   └── vendor
+│   │   │       ├── anorak
+│   │   │       ├── common
+│   │   │       │   └── attribute
+│   │   │       ├── lahaina
+│   │   │       ├── msmsteppe
+│   │   │       ├── neo
+│   │   │       ├── parrot
+│   │   │       ├── taro
+│   │   │       └── test
+│   │   └── qva
+│   │       └── vendor
+│   │           ├── anorak
+│   │           ├── common
+│   │           ├── lahaina
+│   │           ├── msmsteppe
+│   │           ├── neo
+│   │           ├── parrot
+│   │           ├── ssg
+│   │           ├── taro
+│   │           └── test
+│   │               └── sysmonapp
+│   └── sepolicy_vndr-legacy-um
+│       ├── generic
+│       │   └── vendor
+│       │       ├── common
+│       │       │   └── attribute
+│       │       ├── holi
+│       │       ├── kona
+│       │       ├── lahaina
+│       │       ├── lito
+│       │       ├── msmnile
+│       │       ├── msmsteppe
+│       │       ├── sdm845
+│       │       ├── test
+│       │       └── waipio
+│       ├── legacy
+│       │   └── vendor
+│       │       ├── common
+│       │       ├── sdm710
+│       │       ├── sdm845
+│       │       ├── ssg
+│       │       └── test
+│       │           ├── mst_test_app
+│       │           └── sysmonapp
+│       └── qva
+│           └── vendor
+│               ├── atoll
+│               ├── bengal
+│               ├── common
+│               ├── holi
+│               ├── kona
+│               ├── lahaina
+│               ├── msmnile
+│               ├── msmsteppe
+│               ├── ssg
+│               ├── test
+│               │   ├── mst_test_app
+│               │   └── sysmonapp
+│               └── trinket
+└── xiaomi
+    └── atom
+        ├── audio
+        │   └── hal
+        ├── configs
+        │   ├── audio
+        │   ├── keylayout
+        │   ├── media
+        │   ├── permissions
+        │   ├── props
+        │   └── seccomp
+        ├── fingerprint
+        ├── interfaces
+        │   └── hardware
+        │       ├── biometrics
+        │       │   └── fingerprint
+        │       │       └── 2.1
+        │       ├── displayfeature
+        │       │   └── 1.0
+        │       ├── fingerprintextension
+        │       │   └── 1.0
+        │       ├── motor
+        │       │   └── 1.0
+        │       └── touchfeature
+        │           └── 1.0
+        └── sepolicy
+            └── private
+
+1183 directories
