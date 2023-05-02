@@ -73,53 +73,63 @@ buildUser() {
     echo
 }
 
-buildVndkliteVariant() {
-    echo "--> Building treble_arm64_bvN-vndklite"
-    cd sas-creator
-    sudo bash lite-adapter.sh 64 $BD/system-treble_arm64_bvN.img
-    cp s.img $BD/system-treble_arm64_bvN-vndklite.img
-    sudo rm -rf s.img d tmp
-    cd ..
-    echo
-}
+# buildVndkliteVariant() {
+#     echo "--> Building treble_arm64_bvN-vndklite"
+#     cd sas-creator
+#     sudo bash lite-adapter.sh 64 $BD/system-treble_arm64_bvN.img
+#     cp s.img $BD/system-treble_arm64_bvN-vndklite.img
+#     sudo rm -rf s.img d tmp
+#     cd ..
+#     echo
+# }
 
-generatePackages() {
-    echo "--> Generating packages"
-    xz -cv $BD/system-treble_arm64_bvN.img -T0 > $BD/PixelExperience_arm64-ab-13.0-$BUILD_DATE-UNOFFICIAL.img.xz
-    xz -cv $BD/system-treble_arm64_bvN-vndklite.img -T0 > $BD/PixelExperience_arm64-ab-vndklite-13.0-$BUILD_DATE-UNOFFICIAL.img.xz
-    xz -cv $BD/system-treble_arm64_bvN-slim.img -T0 > $BD/PixelExperience_arm64-ab-slim-13.0-$BUILD_DATE-UNOFFICIAL.img.xz
-    rm -rf $BD/system-*.img
-    echo
-}
+# generatePackages() {
+#     echo "--> Generating packages"
+#     xz -cv $BD/system-treble_arm64_bvN.img -T0 > $BD/PixelExperience_arm64-ab-13.0-$BUILD_DATE-UNOFFICIAL.img.xz
+#     xz -cv $BD/system-treble_arm64_bvN-vndklite.img -T0 > $BD/PixelExperience_arm64-ab-vndklite-13.0-$BUILD_DATE-UNOFFICIAL.img.xz
+#     xz -cv $BD/system-treble_arm64_bvN-slim.img -T0 > $BD/PixelExperience_arm64-ab-slim-13.0-$BUILD_DATE-UNOFFICIAL.img.xz
+#     rm -rf $BD/system-*.img
+#     echo
+# }
 
 START=`date +%s`
 BUILD_DATE="$(date +%Y%m%d)"
 
+prepareFiles(){
+    mkdir -p device/xiaomi/atom
+    mv BoardConfig.mk device/xiaomi/atom
+    # 把所有文件夹都移动到设备树目录
+    mv -r audoi/ device/xiaomi/atom/
+    mv -r bluetooth/ device/xiaomi/atom
+    mv -r configs/ device/xiaomi/atom
+    # .......此处省略
+    mv -r sepolicy/ device/xiaomi/atom
 
-# prepare
-# mv BoardConfig.mk ./debice/xiaomi/atom
-# mv -r sepolicy/ device/xiaomi/atom/
-# git clone https://github.com/PixelExperience/device_mediatek_sepolicy_vndr
-# mkdir device/mediatek
-# mkdir device/mediatek/sepolicy_vndr
-# mv -r device_mediatek_sepolicy_vndr/* device/mediatek/sepolicy_vndr/
+    mv framework_manifest.xml device/xiaomi/atom/   
+    mv compatibility_matrix.xml device/xiaomi/atom/
+    mv AndroidProducts.mk device/xiaomi/atom/
+    mv aosp_atom.mk device/xiaomi/atom/
+    mv BoardConfig.mk device/xiaomi/atom/
+    mv device.mk device/xiaomi/atom/
 
-# mkdir kernel/xiaomi/    
-# mkdir kernel/xiaomi/atom
-# git clone --depth=1 https://github.com/xiaomi-mt6885-devs/android_kernel_xiaomi_mt6885
-# mv -r Xiaomi_Kernel_OpenSource/* kernel/xiaomi/atom/
-
-# mv -r sepolicy/ device/xiaomi/atom
-# mv -r fingerprint/ device/xiaomi/atom
-# cp -r configs/ device/xiaomi/atom
-# cp framework_manifest.xml device/xiaomi/atom/
-# cp compatibility_matrix.xml device/xiaomi/atom/
-
-# initRepos
-# syncRepos
-# applyPatches
+    mkdir -p r device/mediatek/sepolicy_vndr
+    git clone https://github.com/PixelExperience/device_mediatek_sepolicy_vndr
+    mv -r device_mediatek_sepolicy_vndr/* device/mediatek/sepolicy_vndr/
+    mkdir -p kernel/xiaomi/atom
+    git clone --depth=1 https://github.com/xiaomi-mt6885-devs/android_kernel_xiaomi_mt6885
+    mv -r Xiaomi_Kernel_OpenSource/* kernel/xiaomi/atom/
 
 
+    # 解压 prebuilt.zip 到 prebuilt文件夹
+    cd prebuilt && unzip ../prebuilt.zip
+}
+
+
+
+initRepos
+syncRepos
+applyPatches
+prepareFiles
 setupEnv
 buildUser
 # buildSlimVariant
